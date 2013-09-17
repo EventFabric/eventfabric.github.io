@@ -1,0 +1,4 @@
+.. _hub-element:
+
+Hub
+===
