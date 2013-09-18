@@ -1,0 +1,199 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>Counter Widget &mdash; Event Fabric 1.0 documentation</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Widgets" href="index.html" />
+    <link rel="next" title="Gauge" href="gauge.html" />
+    <link rel="prev" title="Bubble Chart" href="bubble.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="gauge.html" title="Gauge"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="bubble.html" title="Bubble Chart"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Widgets</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="counter-widget">
+<span id="id1"></span><h1>Counter Widget<a class="headerlink" href="#counter-widget" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="field-templates">
+<h2>Field Templates<a class="headerlink" href="#field-templates" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../_images/counter-fields.png" src="../_images/counter-fields.png" />
+</div>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<p>Bold field names are required fields, others are optional.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="9%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>val</strong></td>
+<td>Text</td>
+<td>Value to use according to action</td>
+</tr>
+<tr class="row-odd"><td><strong>label</strong></td>
+<td>Text</td>
+<td>Text to display below the counter</td>
+</tr>
+<tr class="row-even"><td>color</td>
+<td>Color</td>
+<td>Background color</td>
+</tr>
+<tr class="row-odd"><td>action</td>
+<td>Text</td>
+<td>Name of the action, by default &#8220;set&#8221;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="actions">
+<h2>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="add">
+<h3>add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h3>
+<p>Increase the value identified by <em>label</em> by <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
+<p>Useful to accumulate by an identifier.</p>
+</div>
+<div class="section" id="substract">
+<h3>substract<a class="headerlink" href="#substract" title="Permalink to this headline">¶</a></h3>
+<p>Decrease the value identified by <em>label</em> by <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
+</div>
+<div class="section" id="set">
+<h3>set<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h3>
+<p>Set the value identified by <em>label</em> to <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Counter Widget</a><ul>
+<li><a class="reference internal" href="#field-templates">Field Templates</a></li>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#actions">Actions</a><ul>
+<li><a class="reference internal" href="#add">add</a></li>
+<li><a class="reference internal" href="#substract">substract</a></li>
+<li><a class="reference internal" href="#set">set</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="bubble.html"
+                        title="previous chapter">Bubble Chart</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="gauge.html"
+                        title="next chapter">Gauge</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/widget/counter.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="gauge.html" title="Gauge"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="bubble.html" title="Bubble Chart"
+             >previous</a> |</li>
+        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Widgets</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013, Javier Dall&#39; Amore, Mariano Guerra.
+  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+  <br />Theme based on <a href="http://readthedocs.org/">Read The Docs</a>
+
+</div>
+
+
+
+
+
+  </body>
+</html>
