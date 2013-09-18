@@ -1,0 +1,4 @@
+.. _ticker-element:
+
+Ticker
+======

@@ -10,3 +10,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+
+   element/index
+   widget/index
+
