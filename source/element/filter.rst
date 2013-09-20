@@ -1,7 +1,10 @@
 .. _filter-element:
 
-Filter Element
-==============
+Filter
+======
+
+.. figure:: ../../img/filter-element.png
+   :align: center
 
 The filter element receives an event, runs some logic with it and emits
 an event if the value of the output field *keep* is *true* otherwise it discards

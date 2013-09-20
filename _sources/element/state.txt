@@ -2,3 +2,7 @@
 
 State
 =====
+
+.. figure:: ../../img/loader-element.png
+   :align: center
+

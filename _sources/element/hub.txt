@@ -3,3 +3,6 @@
 Hub
 ===
 
+.. figure:: ../../img/hub-element.png
+   :align: center
+

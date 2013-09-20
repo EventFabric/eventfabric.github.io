@@ -2,3 +2,7 @@
 
 Ticker
 ======
+
+.. figure:: ../../img/ticker-element.png
+   :align: center
+
