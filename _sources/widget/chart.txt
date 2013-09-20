@@ -3,6 +3,9 @@
 Chart
 =====
 
+.. figure:: ../../img/chart-widget.png
+   :align: center
+
 Field Templates
 ---------------
 

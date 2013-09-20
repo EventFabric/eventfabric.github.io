@@ -3,6 +3,9 @@
 News Ticker
 ===========
 
+.. figure:: ../../img/news-widget.png
+   :align: center
+
 Field Templates
 ---------------
 

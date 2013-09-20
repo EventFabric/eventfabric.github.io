@@ -3,6 +3,9 @@
 Pie Chart
 =========
 
+.. figure:: ../../img/pie-widget.png
+   :align: center
+
 Field Templates
 ---------------
 

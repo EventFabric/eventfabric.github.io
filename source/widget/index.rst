@@ -24,4 +24,4 @@ them such as filtering, clearing content etc.
    stack
    table
    template
-   map
+   thematic-map

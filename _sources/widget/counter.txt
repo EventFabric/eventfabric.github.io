@@ -3,6 +3,9 @@
 Counter Widget
 ==============
 
+.. figure:: ../../img/counter-widget.png
+   :align: center
+
 Field Templates
 ---------------
 

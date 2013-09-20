@@ -3,6 +3,9 @@
 Bars Chart
 ==========
 
+.. figure:: ../../img/bars-widget.png
+   :align: center
+
 Field Templates
 ---------------
 

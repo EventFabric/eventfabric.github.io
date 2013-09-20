@@ -3,6 +3,9 @@
 Table
 =====
 
+.. figure:: ../../img/table-widget.png
+   :align: center
+
 Field Templates
 ---------------
 

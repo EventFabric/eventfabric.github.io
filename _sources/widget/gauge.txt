@@ -3,6 +3,9 @@
 Gauge
 =====
 
+.. figure:: ../../img/gauge-widget.png
+   :align: center
+
 Field Templates
 ---------------
 
