@@ -25,9 +25,11 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinxcontrib.googleanalytics']
+extensions = ['sphinxcontrib.googleanalytics', 'sphinxcontrib.disqus']
 googleanalytics_id = 'UA-44215851-1'
 googleanalytics_domain = 'eventfabric.github.io'
+
+disqus_id = "eventfabricdocumentation"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
