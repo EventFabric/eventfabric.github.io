@@ -91,6 +91,12 @@
 <div class="figure align-center">
 <img alt="../_images/hub-element.png" src="../_images/hub-element.png" />
 </div>
+<p>The hub element received an event from any of it sources and sends it to all
+of it&#8217;s targets.</p>
+<p>This element is only to organize the connections and avoid having &#8220;many to
+many&#8221; connections, for example having one source, one ticker and one state
+loader connected to 3 transformers. Without a hub it would require 9
+connections, with a hub it will require 6.</p>
 </div>
 
 
