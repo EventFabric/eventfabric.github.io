@@ -3,7 +3,7 @@
 Ticker
 ======
 
-.. figure:: ../../img/ticker-element.png
+.. figure:: ../../img/timer-element.png
    :align: center
 
 The ticker element generates a configured event at configured rate.
