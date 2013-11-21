@@ -13,4 +13,4 @@ Contents:
 
    element/index
    widget/index
-
+   tutorials/index
