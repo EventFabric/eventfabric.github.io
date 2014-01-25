@@ -3,10 +3,22 @@
 News Ticker
 ===========
 
+.. figure:: ../../img/news.gif
+   :align: center
+
 Field Templates
 ---------------
 
-.. figure:: ../../img/news-fields.png
+Required
+........
+
+.. figure:: ../../img/news-fields-required.png
+   :align: center
+
+Optional
+........
+
+.. figure:: ../../img/news-fields-optional.png
    :align: center
 
 Fields

@@ -12,16 +12,21 @@ them such as filtering, clearing content etc.
 .. toctree::
    :maxdepth: 2
 
-   news
-   chart
-   pie
    bars
    bubble
-   counter
+   calendar
+   chart
    gauge
    graph
    image
+   map
+   news
+   odometer
+   pie
+   planetary
+   region-map
    stack
    table
    template
-   map
+   thematic-map
+   traffic-lights

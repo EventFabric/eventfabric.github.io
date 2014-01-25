@@ -3,10 +3,22 @@
 Bars Chart
 ==========
 
+.. figure:: ../../img/bar.gif
+   :align: center
+
 Field Templates
 ---------------
 
-.. figure:: ../../img/bar-fields.png
+Required
+........
+
+.. figure:: ../../img/bar-fields-required.png
+   :align: center
+
+Optional
+........
+
+.. figure:: ../../img/bar-fields-optional.png
    :align: center
 
 Fields
@@ -50,3 +62,7 @@ remove
 
 Removes the value identified by *label* from the displayed values.
 
+Library
+-------
+
+http://www.humblesoftware.com/flotr2/

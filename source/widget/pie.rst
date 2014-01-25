@@ -3,10 +3,22 @@
 Pie Chart
 =========
 
+.. figure:: ../../img/pie.gif
+   :align: center
+
 Field Templates
 ---------------
 
-.. figure:: ../../img/pie-fields.png
+Required
+........
+
+.. figure:: ../../img/pie-fields-required.png
+   :align: center
+
+Optional
+........
+
+.. figure:: ../../img/pie-fields-optional.png
    :align: center
 
 Fields
@@ -50,3 +62,7 @@ remove
 
 Removes the value identified by *label* from the displayed values.
 
+Library
+-------
+
+http://www.humblesoftware.com/flotr2/

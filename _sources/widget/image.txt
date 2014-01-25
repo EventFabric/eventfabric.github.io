@@ -3,10 +3,20 @@
 Image
 =====
 
-Field Templates
----------------
+.. figure:: ../../img/image.gif
+   :align: center
 
-.. figure:: ../../img/image-fields.png
+
+Required
+........
+
+.. figure:: ../../img/image-fields-required.png
+   :align: center
+
+Optional
+........
+
+.. figure:: ../../img/image-fields-optional.png
    :align: center
 
 Fields

@@ -3,10 +3,22 @@
 Table
 =====
 
+.. figure:: ../../img/table.gif
+   :align: center
+
 Field Templates
 ---------------
 
-.. figure:: ../../img/table-fields.png
+Required
+........
+
+.. figure:: ../../img/table-fields-required.png
+   :align: center
+
+Optional
+........
+
+.. figure:: ../../img/table-fields-optional.png
    :align: center
 
 Fields

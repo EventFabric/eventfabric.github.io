@@ -3,10 +3,22 @@
 Gauge
 =====
 
+.. figure:: ../../img/gauge.gif
+   :align: center
+
 Field Templates
 ---------------
 
-.. figure:: ../../img/gauge-fields.png
+Required
+........
+
+.. figure:: ../../img/gauge-fields-required.png
+   :align: center
+
+Optional
+........
+
+.. figure:: ../../img/gauge-fields-optional.png
    :align: center
 
 Fields

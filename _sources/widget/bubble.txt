@@ -3,10 +3,22 @@
 Bubble Chart
 ============
 
+.. figure:: ../../img/bubble.gif
+   :align: center
+
 Field Templates
 ---------------
 
-.. figure:: ../../img/bubble-fields.png
+Required
+........
+
+.. figure:: ../../img/bubble-fields-required.png
+   :align: center
+
+Optional
+........
+
+.. figure:: ../../img/bubble-fields-optional.png
    :align: center
 
 Fields
@@ -45,3 +57,7 @@ remove
 
 Removes the value identified by *label* from the displayed values.
 
+Library
+-------
+
+http://www.humblesoftware.com/flotr2/
