@@ -11,6 +11,7 @@ Cosntents:
 .. toctree::
    :maxdepth: 2
 
+   about
+   tutorials/index
    element/index
    widget/index
-

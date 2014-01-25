@@ -1,7 +1,10 @@
 .. _sink-element:
 
-Widget Element
-==============
+Widget
+======
+
+.. figure:: ../../img/widget-element.png
+   :align: center
 
 The widget element can receive events and display them on the dashboard, it
 doesn't generate or pass any events to other elements.

@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44215851-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
+    
+
+    <title>Bitcoin Dashboard Tutorial &mdash; Event Fabric 1.0 documentation</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/searchtools.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="top" title="Event Fabric 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Tutorials" href="../index.html" />
+    <link rel="next" title="Element" href="../../element/index.html" />
+    <link rel="prev" title="Tutorials" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../element/index.html" title="Element"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Tutorials"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Tutorials</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="bitcoin-dashboard-tutorial">
+<h1>Bitcoin Dashboard Tutorial<a class="headerlink" href="#bitcoin-dashboard-tutorial" title="Permalink to this headline">¶</a></h1>
+<p>We start by creating a new dashboard, selecting the <strong>Create Dashboard</strong>
+action at the top right of the screen.</p>
+<p>We give it a name (in my case &#8220;Bitcoin&#8221;) and we select the apps that we want to
+use, in this case we need the standard widgets and the firebase data source, so
+we select &#8220;Widgets&#8221; and &#8220;Firebase Source&#8221;.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-1.png" src="../../_images/demo-1.png" />
+</div>
+<p>After the dashboard is created and we are in it, we go to the editor by selecting
+the <strong>Edit</strong> action at the top right.</p>
+<p>Now in the editor canvas we create a new Data Source by drag and drop of a Data
+Source element.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-2.png" src="../../_images/demo-2.png" />
+</div>
+<p>Once we have it we can give it a more descriptive name by selecting it and
+clicking on its label.</p>
+<p>With this action the label becomes a text entry and we can change it&#8217;s name,
+after which we press enter.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-3.png" src="../../_images/demo-3.png" />
+</div>
+<p>After naming it we want to configure our first <a class="reference external" href="https://www.firebase.com/">firebase</a> data source.</p>
+<p>For this we select our source and click on it again or we right click on it.</p>
+<p>This will display the actions we can do on it, in this case we select the
+<strong>Settings</strong> action which is the leftmost option.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-4.png" src="../../_images/demo-4.png" />
+</div>
+<p>This will display the settings dialog where first we need to select what kind of
+data source we want to create, in our case we select the <strong>Firebase</strong> type and click <strong>OK</strong>.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-5.png" src="../../_images/demo-5.png" />
+</div>
+<p>Now we have the firebase specific configuration, here we need to provide the
+address of the object we want to watch for changed, in this case we want to
+get the changes in the bitcoin prince, for this we use the public data set for
+bitcoin that is located at <a class="reference external" href="https://publicdata-bitcoin.firebaseio.com/">https://publicdata-bitcoin.firebaseio.com/</a></p>
+<p>We select <strong>Wrap Data</strong> option to wrap the received data in a standard Event
+Fabric event and set <strong>Channel</strong> to bitcoin and <strong>Username</strong> to our username.</p>
+<p>In type we have to select what type of changed are we listening to, in our case
+we use the <strong>value</strong> type, details of what they mean are available at the
+<a class="reference external" href="https://www.firebase.com/docs/javascript/firebase/on.html">firebase reference for the *on* method</a></p>
+<p>After we finished configuring our data source we click <strong>OK</strong>.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-6.png" src="../../_images/demo-6.png" />
+</div>
+<p>At this point it should get the first value of the object and signal it by
+displaying a green bubble at the bottom right with a number representing how many
+changes have been received by the data source.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-7.png" src="../../_images/demo-7.png" />
+</div>
+<p>We can click on the bubble to see the received value, we can see in the value field
+that it contains an object with three attributes (ask, bid, last) whose values
+are text with those values (text is green and italic, numbers are blue and bold).</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-8.png" src="../../_images/demo-8.png" />
+</div>
+<p>Now we need to transform the received data to display it in some way in the dashboard,
+for this we create a new <strong>transformer</strong> by drag and drop.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-9.png" src="../../_images/demo-9.png" />
+</div>
+<p>We give it a name and open the actions menu to select the settings action.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-10.png" src="../../_images/demo-10.png" />
+</div>
+<p>Almost all widgets need at least a <strong>val</strong> value available to know what to display,
+for this we can go to the <strong>Templates</strong> section on the left panel, expand it and
+select the <strong>Set Value</strong> section and then drag and drop the available template.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-11.png" src="../../_images/demo-11.png" />
+</div>
+<p>The widget that we are going to use expects the label for the value in the <strong>label</strong> variable,
+to create this block we do as before by expanding the <strong>Templates</strong> section and selecting the
+<strong>Set Label</strong> Template.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-12.png" src="../../_images/demo-12.png" />
+</div>
+<p>We then connect the two blocks together and change the values that they receive
+by removing the right part and adding what we need.</p>
+<p>In the case of <strong>val</strong> we need to transform the text representing the number to
+an actual decimal number, for this we use the <strong>to decimal</strong> block available on
+the <strong>Text Section</strong>.</p>
+<p>The <strong>to decimal</strong> block expects an input which is of type text and produces a
+decimal number as a result, the input will be the <strong>ask</strong> field inside the
+<strong>value</strong> object, for this we use the <strong>get value</strong> block that looks for a field
+inside the <strong>value</strong> object and we provide the name <em>ask</em> to that block.</p>
+<p>For the <strong>label</strong> variable we create a text block and set the content of the text to <em>Ask</em>.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-13.png" src="../../_images/demo-13.png" />
+</div>
+<p>Now that we have the source and the transformer we need to connect them, we do
+this by opening the actions menu on the source and we select the <strong>connect action</strong>
+after this we drag the connection and click on the target of the connection,
+in this case the transformer.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-14.png" src="../../_images/demo-14.png" />
+</div>
+<p>After this we have the two elements connected.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-15.png" src="../../_images/demo-15.png" />
+</div>
+<p>We can wait for a new event to come in to see the events flowing or we can refresh
+the browser to force at least the current value to flow through the connection.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-16.png" src="../../_images/demo-16.png" />
+</div>
+<p>When the transformer received the event we can see two bubbles appearing, one
+on the left for the received value and one on the right for the transformed
+value, we click on the bubble on the right to see the result of the
+transformation and at the bottom of the last event we can see our two fields
+<strong>val</strong> and <strong>label</strong> with the correct content.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-17.png" src="../../_images/demo-17.png" />
+</div>
+<p>But we still have to display this information in some widget, for this we
+create a widget element and name it to <em>Ask Price</em>.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-18.png" src="../../_images/demo-18.png" />
+</div>
+<p>We open the actions menu to configure it.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-19.png" src="../../_images/demo-19.png" />
+</div>
+<p>Select <strong>odometer</strong> widget type and click <strong>OK</strong>.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-20.png" src="../../_images/demo-20.png" />
+</div>
+<p>And leave settings by default and click <strong>OK</strong>.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-21.png" src="../../_images/demo-21.png" />
+</div>
+<p>Now we connect the transformer to the widget as before.</p>
+<p>Again, we can wait for a value change or we can refresh the browser to see the
+last value flow to the widget.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-22.png" src="../../_images/demo-22.png" />
+</div>
+<p>We can close the editor and see the odometer displaying the value.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-23.png" src="../../_images/demo-23.png" />
+</div>
+<p>Now create a similar transformer for the bid value.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-24.png" src="../../_images/demo-24.png" />
+</div>
+<p>Connect in the same way as before.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-25.png" src="../../_images/demo-25.png" />
+</div>
+<p>Do the same for last value.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-26.png" src="../../_images/demo-26.png" />
+</div>
+<p>Now we have three widgets displaying the three available values
+.. figure:: ./img/demo-27.png</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">align:</th><td class="field-body">center</td>
+</tr>
+<tr class="field-even field"><th class="field-name">scale:</th><td class="field-body">70%</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Now we want to display the values over time, for this we create a new widget.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-28.png" src="../../_images/demo-28.png" />
+</div>
+<p>Select the Chart widget type.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-29.png" src="../../_images/demo-29.png" />
+</div>
+<p>Select the &#8220;Show Legend&#8221; option.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-30.png" src="../../_images/demo-30.png" />
+</div>
+<p>Connect the three transformers to the chart widget.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-31.png" src="../../_images/demo-31.png" />
+</div>
+<p>Wait for events of refresh to see the chart populating.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-32.png" src="../../_images/demo-32.png" />
+</div>
+<p>Create a new widget.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-33.png" src="../../_images/demo-33.png" />
+</div>
+<p>Select the <strong>News Ticker</strong> widget type.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-34.png" src="../../_images/demo-34.png" />
+</div>
+<p>Select both options.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-35.png" src="../../_images/demo-35.png" />
+</div>
+<p>Now to avoid having a mess of connections we will use the hub element, but
+first we need to remove the connections to the chart widget, we do this by
+clicking on the connection we want to remove and selecting the <strong>Remove
+Connection</strong> icon.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-36.png" src="../../_images/demo-36.png" />
+</div>
+<p>To clean up the connections disconnect all the connections to chart and create
+a hub element. Then connect the three transformers to the hub and the hub to
+the chart widget.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-37.png" src="../../_images/demo-37.png" />
+</div>
+<p>Create a new transformer for the news ticker</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-38.png" src="../../_images/demo-38.png" />
+</div>
+<p>Now we need to set the <strong>val</strong> field to the text we want to display on the
+news ticker widget, in this case we build a string by joining several pieces
+of text, we use the markdown markup to make a piece of text bold by surrounding
+it by two asterisks like this **bold text** results in <strong>bold text</strong>.</p>
+<p>You can find more information about markdown in the <a class="reference external" href="http://daringfireball.net/projects/markdown/syntax">markdown syntax documentation</a></p>
+<p>Finally we need to delete the <strong>label</strong> var since the news ticker works
+differently if it&#8217;s set (it replace the value with that label instead of adding
+the value on top).</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-40.png" src="../../_images/demo-40.png" />
+</div>
+<p>Now we connect the hub to our transformer and the transformer to the news ticker.</p>
+<div class="figure align-center">
+<img alt="../../_images/demo-41.png" src="../../_images/demo-41.png" />
+</div>
+<p>Close the editor to see the News Ticker populate either by waiting for a new
+event or by refreshing.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/demo-42.png"><img alt="../../_images/demo-42.png" src="../../_images/demo-42.png" style="width: 993.3px; height: 493.5px;" /></a>
+</div>
+<p>Finally click the lock action at the bottom left to set the dashboard to read
+only and we are done!</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/demo-43.png"><img alt="../../_images/demo-43.png" src="../../_images/demo-43.png" style="width: 977.9px; height: 455.7px;" /></a>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">Tutorials</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../element/index.html"
+                        title="next chapter">Element</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/tutorials/bitcoin/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../element/index.html" title="Element"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Tutorials"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Tutorials</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013, Javier Dall&#39; Amore, Mariano Guerra.
+  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.1.
+  <br />Theme based on <a href="http://readthedocs.org/">Read The Docs</a>
+
+</div>
+
+
+
+
+
+  </body>
+</html>

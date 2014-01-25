@@ -5,6 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44215851-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
     
 
     <title>Source &mdash; Event Fabric 1.0 documentation</title>
@@ -29,6 +59,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
     <link rel="up" title="Element" href="index.html" />
     <link rel="next" title="State" href="state.html" />
@@ -59,6 +91,39 @@
             
   <div class="section" id="source">
 <span id="source-element"></span><h1>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/source-element.png" src="../_images/source-element.png" />
+</div>
+<p>A source is an element that makes events available to Event Fabric, at the moment
+the supported sources are:</p>
+<ul class="simple">
+<li>Event Fabric Source</li>
+<li>Sample Source</li>
+</ul>
+<p>Other sources will be added in the future via apps that can be activated when
+needed per dashboard.</p>
+<div class="section" id="event-fabric-source">
+<h2>Event Fabric Source<a class="headerlink" href="#event-fabric-source" title="Permalink to this headline">¶</a></h2>
+<p>This can be considered the standard event source, to configure you have to
+specify a channel and a username, after configuring, any event sent to that
+channel and by that username will be emitted by that source element.</p>
+</div>
+<div class="section" id="sample-event-source">
+<h2>Sample Event Source<a class="headerlink" href="#sample-event-source" title="Permalink to this headline">¶</a></h2>
+<p>Used to generate events without an actual source, mainly to prototype a
+dashboard or try something new.</p>
+</div>
+<div class="section" id="event-selected">
+<h2>Event Selected<a class="headerlink" href="#event-selected" title="Permalink to this headline">¶</a></h2>
+<p>This source emits an event each time an event is clicked on a widget which
+supports event selection (like news ticker, table etc.).</p>
+</div>
+<div class="section" id="event-selected-with-filter">
+<h2>Event Selected with Filter<a class="headerlink" href="#event-selected-with-filter" title="Permalink to this headline">¶</a></h2>
+<p>This source emits an event each time an event is clicked on a widget which
+supports event selection (like news ticker, table etc.), before emitting the
+event it filters the ones that are not in the filter list.</p>
+</div>
 </div>
 
 
@@ -67,6 +132,17 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Source</a><ul>
+<li><a class="reference internal" href="#event-fabric-source">Event Fabric Source</a></li>
+<li><a class="reference internal" href="#sample-event-source">Sample Event Source</a></li>
+<li><a class="reference internal" href="#event-selected">Event Selected</a></li>
+<li><a class="reference internal" href="#event-selected-with-filter">Event Selected with Filter</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
                         title="previous chapter">Element</a></p>

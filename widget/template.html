@@ -5,6 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44215851-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
     
 
     <title>Template &mdash; Event Fabric 1.0 documentation</title>
@@ -29,6 +59,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
     <link rel="up" title="Widgets" href="index.html" />
     <link rel="next" title="Thematic Map" href="thematic-map.html" />
@@ -62,6 +94,18 @@
 <div class="figure align-center">
 <img alt="widget/../../img/template.gif" src="widget/../../img/template.gif" />
 </div>
+<p>The Template widget allows to display fields from an event on an HTML document
+created using a visual editor, to configure just create any kind of document
+you wish to display on the editor and insert placeholders for the values from
+the event which will be replaced when a new event is received.</p>
+<div class="section" id="placeholders">
+<h2>Placeholders<a class="headerlink" href="#placeholders" title="Permalink to this headline">¶</a></h2>
+<p>Placeholders are inserted between curly brackets like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>The value of username is {username}
+</pre></div>
+</div>
+<p>where {username} will be replaced by the username field from the received event.</p>
+</div>
 <div class="section" id="library">
 <h2>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://akdubya.github.io/dustjs/">http://akdubya.github.io/dustjs/</a></p>
@@ -77,6 +121,7 @@
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Template</a><ul>
+<li><a class="reference internal" href="#placeholders">Placeholders</a></li>
 <li><a class="reference internal" href="#library">Library</a></li>
 </ul>
 </li>

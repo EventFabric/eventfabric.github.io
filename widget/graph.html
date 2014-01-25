@@ -5,6 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44215851-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
     
 
     <title>Graph Widget &mdash; Event Fabric 1.0 documentation</title>
@@ -29,6 +59,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
     <link rel="up" title="Widgets" href="index.html" />
     <link rel="next" title="Image" href="image.html" />
@@ -59,6 +91,9 @@
             
   <div class="section" id="graph-widget">
 <span id="id1"></span><h1>Graph Widget<a class="headerlink" href="#graph-widget" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/graph-widget.png" src="../_images/graph-widget.png" />
+</div>
 <div class="section" id="field-templates">
 <h2>Field Templates<a class="headerlink" href="#field-templates" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
@@ -95,6 +130,160 @@
 </tr>
 </tbody>
 </table>
+<div class="section" id="graph">
+<h3>Graph<a class="headerlink" href="#graph" title="Permalink to this headline">¶</a></h3>
+<p>The Graph widget allows modelling a graph and manipulating it by triggering
+actions on the widget, actions allow to focus nodes, change attributes on
+nodes, send values between them, and increase one of the four counters
+available on each node.</p>
+<p>First the graph must be built in the same way as it&#8217;s done on the edit option
+on a dashboard, then when ready right click on the widget title bar and select
+&#8220;Save&#8221; to save the layout.</p>
+</div>
+</div>
+<div class="section" id="actions">
+<h2>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
+<p>Change the attributes of node identified by <em>id</em> with the attributes and
+values in <em>value</em>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="11%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>Text</td>
+<td>Node identifier</td>
+</tr>
+<tr class="row-odd"><td><strong>value</strong></td>
+<td>Object</td>
+<td>Node attributes to change</td>
+</tr>
+</tbody>
+</table>
+<p>Possible keys and values for the <em>value</em> field:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="10%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>fill</strong></td>
+<td>Text</td>
+<td>Color to fill the shape</td>
+</tr>
+<tr class="row-odd"><td><strong>fill-opacity</strong></td>
+<td>Number</td>
+<td>Opacity of fill color from 0.0 to 1.0</td>
+</tr>
+<tr class="row-even"><td><strong>stroke</strong></td>
+<td>Text</td>
+<td>Color for the shape&#8217;s stroke</td>
+</tr>
+<tr class="row-odd"><td><strong>stroke-opacity</strong></td>
+<td>Number</td>
+<td>Opacity for the shape&#8217;s stroke</td>
+</tr>
+</tbody>
+</table>
+<p>Focus the node identified by <em>id</em>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="11%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>Text</td>
+<td>Node identifier</td>
+</tr>
+</tbody>
+</table>
+<p>Send <em>value</em> from the node identified by <em>id</em> until the last connected node or
+just travel a number of <em>hops</em> if specified.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="11%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>Text</td>
+<td>Node identifier</td>
+</tr>
+<tr class="row-odd"><td><strong>value</strong></td>
+<td>Any</td>
+<td>Value to send</td>
+</tr>
+<tr class="row-even"><td>hops</td>
+<td>Number</td>
+<td>Number of hops to travel</td>
+</tr>
+</tbody>
+</table>
+<p>Increase bubble counter <em>cid</em> in node <em>id</em> by <em>value</em>.</p>
+<p>available <em>cid</em> values are:</p>
+<ul class="simple">
+<li>top-left</li>
+<li>top-right</li>
+<li>bottom-left</li>
+<li>bottom-right</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="11%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>Text</td>
+<td>Node identifier</td>
+</tr>
+<tr class="row-odd"><td><strong>cid</strong></td>
+<td>Text</td>
+<td>Bubble identifier</td>
+</tr>
+<tr class="row-even"><td><strong>value</strong></td>
+<td>Number</td>
+<td>Amount to increment (default 1)</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -108,7 +297,11 @@
   <ul>
 <li><a class="reference internal" href="#">Graph Widget</a><ul>
 <li><a class="reference internal" href="#field-templates">Field Templates</a></li>
-<li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#fields">Fields</a><ul>
+<li><a class="reference internal" href="#graph">Graph</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#actions">Actions</a></li>
 </ul>
 </li>
 </ul>

@@ -5,6 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44215851-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
     
 
     <title>Hub &mdash; Event Fabric 1.0 documentation</title>
@@ -29,9 +59,11 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
     <link rel="up" title="Element" href="index.html" />
-    <link rel="next" title="Filter Element" href="filter.html" />
+    <link rel="next" title="Filter" href="filter.html" />
     <link rel="prev" title="State" href="state.html" /> 
   </head>
   <body>
@@ -42,7 +74,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="filter.html" title="Filter Element"
+          <a href="filter.html" title="Filter"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="state.html" title="State"
@@ -59,6 +91,15 @@
             
   <div class="section" id="hub">
 <span id="hub-element"></span><h1>Hub<a class="headerlink" href="#hub" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/hub-element.png" src="../_images/hub-element.png" />
+</div>
+<p>The hub element received an event from any of it sources and sends it to all
+of it&#8217;s targets.</p>
+<p>This element is only to organize the connections and avoid having &#8220;many to
+many&#8221; connections, for example having one source, one ticker and one state
+loader connected to 3 transformers. Without a hub it would require 9
+connections, with a hub it will require 6.</p>
 </div>
 
 
@@ -72,7 +113,7 @@
                         title="previous chapter">State</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="filter.html"
-                        title="next chapter">Filter Element</a></p>
+                        title="next chapter">Filter</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/element/hub.txt"
@@ -102,7 +143,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="filter.html" title="Filter Element"
+          <a href="filter.html" title="Filter"
              >next</a> |</li>
         <li class="right" >
           <a href="state.html" title="State"

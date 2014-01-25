@@ -5,6 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44215851-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
     
 
     <title>Transformer &mdash; Event Fabric 1.0 documentation</title>
@@ -29,10 +59,12 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../about.html" />
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
     <link rel="up" title="Element" href="index.html" />
-    <link rel="next" title="Widget Element" href="sink.html" />
-    <link rel="prev" title="Filter Element" href="filter.html" /> 
+    <link rel="next" title="Widget" href="sink.html" />
+    <link rel="prev" title="Filter" href="filter.html" /> 
   </head>
   <body>
     <div class="related">
@@ -42,10 +74,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="sink.html" title="Widget Element"
+          <a href="sink.html" title="Widget"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="filter.html" title="Filter Element"
+          <a href="filter.html" title="Filter"
              accesskey="P">previous</a> |</li>
         <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Element</a> &raquo;</li> 
@@ -59,6 +91,13 @@
             
   <div class="section" id="transformer">
 <span id="transformer-element"></span><h1>Transformer<a class="headerlink" href="#transformer" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/transformer-element.png" src="../_images/transformer-element.png" />
+</div>
+<p>The transformer element receives an event, runs some logic with it and emits
+one or more events with the received value and any field added using specific
+blocks to add or modify fields.</p>
+<p>The logic is done through a visual language.</p>
 </div>
 
 
@@ -69,10 +108,10 @@
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
   <p class="topless"><a href="filter.html"
-                        title="previous chapter">Filter Element</a></p>
+                        title="previous chapter">Filter</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="sink.html"
-                        title="next chapter">Widget Element</a></p>
+                        title="next chapter">Widget</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/element/transformer.txt"
@@ -102,10 +141,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="sink.html" title="Widget Element"
+          <a href="sink.html" title="Widget"
              >next</a> |</li>
         <li class="right" >
-          <a href="filter.html" title="Filter Element"
+          <a href="filter.html" title="Filter"
              >previous</a> |</li>
         <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
           <li><a href="index.html" >Element</a> &raquo;</li> 
