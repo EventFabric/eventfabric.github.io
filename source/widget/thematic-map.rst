@@ -9,16 +9,7 @@ Thematic Map
 Field Templates
 ---------------
 
-Required
-........
-
-.. figure:: ../../img/thematic-map-fields-required.png
-   :align: center
-
-Optional
-........
-
-.. figure:: ../../img/thematic-map-fields-optional.png
+.. figure:: ../../img/thematic-map-fields.png
    :align: center
 
 Fields
