@@ -31,10 +31,10 @@ Bold field names are required fields, others are optional.
    ==========  =====    ======================================
    Field Name  Type     Description
    ==========  =====    ======================================
-   **val**     Text     Value to use according to action
-   **label**   Text     Text to display below the stack
+   **val**     Text     Value of the category for the specified serie
+   **label**   Text     Text of the category
    color       Color    Background color
-   action      Text     Name of the action, by default "set"
+   serie       Text     Text to display below each stack
    ==========  =====    ======================================
 
 

@@ -29,39 +29,29 @@ Bold field names are required fields, others are optional.
 
 .. table::
 
-   ==========  ======    ======================================
-   Field Name  Type      Description
-   ==========  ======    ======================================
-   **val**     Number    Number to user for action
-   **label**   Text      Identifier for the serie of this value
-   color       Color     Line color
-   action      Text      Name of the action, by default "add"
-   ==========  ======    ======================================
+   ===============  ===========  ======================================
+   Field Name       Type         Description
+   ===============  ===========  ======================================
+   **start**        Number       Timestamp when the event starts
+   **label**        Text         Event description
+   id               Number/Text  Event identifier
+   end              Number       Timestamp when the event finalized
+   allday           Boolean      True if the event lasts all day
+   color            Color        Background color
+   borderColor      Color        Border color
+   textColor        Color        Text color
+   action           Text         Name of the action, by default "add"
+   ===============  ===========  ======================================
+
+If the identifier is setted, a new event with the same identifier will replace the old one
 
 Actions
 -------
 
-add
-...
-
-Increase the value identified by *label* by *val* or 1 if *val* isn't provided.
-
-Useful to accumulate by an identifier.
-    
-substract
-.........
-
-Decrease the value identified by *label* by *val* or 1 if *val* isn't provided.
-
-set
-...
-
-Set the value identified by *label* to *val* or 1 if *val* isn't provided.
-
 remove
 ......
 
-Removes the value identified by *label* from the displayed values.
+Removes the event in the calendar identified by *id* from the displayed values.
 
 Library
 -------

@@ -31,7 +31,10 @@ Bold field names are required fields, others are optional.
    ==========  =====    ======================================
    Field Name  Type     Description
    ==========  =====    ======================================
-   **val**     Text     Value to define needle position
-   **label**   Text     Text to display below the gauge
+   **val**     Text     Text to display as the new
+   label       Text     Identifier for the new
    color       Color    Background color
+   labelColor  Color    Color for the text font
    ==========  =====    ======================================
+
+If two news are sent with the same label, the last one will replace the first one

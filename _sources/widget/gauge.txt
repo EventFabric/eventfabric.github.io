@@ -35,3 +35,23 @@ Bold field names are required fields, others are optional.
    **label**   Text     Text to display below the gauge
    color       Color    Background color
    ==========  =====    ======================================
+
+Actions
+-------
+
+add
+...
+
+Increase the value identified by *label* by *val* or 1 if *val* isn't provided.
+
+Useful to accumulate by an identifier.
+    
+substract
+.........
+
+Decrease the value identified by *label* by *val* or 1 if *val* isn't provided.
+
+set
+...
+
+Set the value identified by *label* to *val* or 1 if *val* isn't provided.
