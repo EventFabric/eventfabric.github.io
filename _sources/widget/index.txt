@@ -12,6 +12,7 @@ them such as filtering, clearing content etc.
 .. toctree::
    :maxdepth: 2
 
+   arc-map
    bars
    bubble
    calendar
@@ -28,5 +29,4 @@ them such as filtering, clearing content etc.
    stack
    table
    template
-   thematic-map
    traffic-lights
