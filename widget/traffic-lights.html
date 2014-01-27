@@ -110,9 +110,9 @@
 <p>Bold field names are required fields, others are optional.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="19%" />
-<col width="11%" />
-<col width="70%" />
+<col width="16%" />
+<col width="10%" />
+<col width="75%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Field Name</th>
@@ -122,43 +122,16 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td><strong>val</strong></td>
-<td>Number</td>
-<td>Number to user for action</td>
+<td>Text</td>
+<td>Text that specify the next traffic-light action
+(go, warning or stop)</td>
 </tr>
 <tr class="row-odd"><td><strong>label</strong></td>
 <td>Text</td>
-<td>Identifier for the serie of this value</td>
-</tr>
-<tr class="row-even"><td>color</td>
-<td>Color</td>
-<td>Line color</td>
-</tr>
-<tr class="row-odd"><td>action</td>
-<td>Text</td>
-<td>Name of the action, by default &#8220;add&#8221;</td>
+<td>Text to show below the traffic light</td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="actions">
-<h2>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="add">
-<h3>add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h3>
-<p>Increase the value identified by <em>label</em> by <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
-<p>Useful to accumulate by an identifier.</p>
-</div>
-<div class="section" id="substract">
-<h3>substract<a class="headerlink" href="#substract" title="Permalink to this headline">¶</a></h3>
-<p>Decrease the value identified by <em>label</em> by <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
-</div>
-<div class="section" id="set">
-<h3>set<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h3>
-<p>Set the value identified by <em>label</em> to <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
-</div>
-<div class="section" id="remove">
-<h3>remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h3>
-<p>Removes the value identified by <em>label</em> from the displayed values.</p>
-</div>
 </div>
 <div class="section" id="library">
 <h2>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h2>
@@ -181,13 +154,6 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#fields">Fields</a></li>
-<li><a class="reference internal" href="#actions">Actions</a><ul>
-<li><a class="reference internal" href="#add">add</a></li>
-<li><a class="reference internal" href="#substract">substract</a></li>
-<li><a class="reference internal" href="#set">set</a></li>
-<li><a class="reference internal" href="#remove">remove</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#library">Library</a></li>
 </ul>
 </li>
