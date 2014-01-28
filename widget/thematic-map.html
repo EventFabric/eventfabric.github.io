@@ -96,8 +96,17 @@
 </div>
 <div class="section" id="field-templates">
 <h2>Field Templates<a class="headerlink" href="#field-templates" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="required">
+<h3>Required<a class="headerlink" href="#required" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-center">
-<img alt="../_images/thematic-map-fields.png" src="../_images/thematic-map-fields.png" />
+<img alt="../_images/thematic-map-fields-required.png" src="../_images/thematic-map-fields-required.png" />
+</div>
+</div>
+<div class="section" id="optional">
+<h3>Optional<a class="headerlink" href="#optional" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<img alt="../_images/thematic-map-fields-optional.png" src="../_images/thematic-map-fields-optional.png" />
+</div>
 </div>
 </div>
 <div class="section" id="fields">
@@ -105,9 +114,9 @@
 <p>Bold field names are required fields, others are optional.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="19%" />
-<col width="14%" />
-<col width="67%" />
+<col width="18%" />
+<col width="12%" />
+<col width="69%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Field Name</th>
@@ -116,36 +125,24 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>val</strong></td>
-<td>Number</td>
-<td>x</td>
-</tr>
-<tr class="row-odd"><td><strong>label</strong></td>
+<tr class="row-even"><td><strong>label</strong></td>
 <td>Text</td>
-<td>x</td>
+<td>Country/State code(A 3)</td>
 </tr>
-<tr class="row-even"><td>level</td>
+<tr class="row-odd"><td><strong>category</strong></td>
 <td>Text</td>
-<td>x</td>
+<td>Category to which the country belongs</td>
 </tr>
-<tr class="row-odd"><td>origin</td>
-<td>Lat/Lng</td>
-<td>x</td>
-</tr>
-<tr class="row-even"><td>destination</td>
-<td>Lat/Lng</td>
-<td>x</td>
-</tr>
-<tr class="row-odd"><td>latitude</td>
-<td>Number</td>
-<td>x</td>
-</tr>
-<tr class="row-even"><td>longitude</td>
-<td>Number</td>
-<td>x</td>
+<tr class="row-even"><td>color</td>
+<td>Color</td>
+<td>Category Color(it can be setted globally too)</td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="section" id="label">
+<h2>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h2>
+<p>Examples: USA, ARG, DEU, CHI, ITA</p>
 </div>
 <div class="section" id="library">
 <h2>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h2>
@@ -162,8 +159,13 @@
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Thematic Map</a><ul>
-<li><a class="reference internal" href="#field-templates">Field Templates</a></li>
+<li><a class="reference internal" href="#field-templates">Field Templates</a><ul>
+<li><a class="reference internal" href="#required">Required</a></li>
+<li><a class="reference internal" href="#optional">Optional</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#label">Label</a></li>
 <li><a class="reference internal" href="#library">Library</a></li>
 </ul>
 </li>
