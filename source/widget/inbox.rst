@@ -9,16 +9,13 @@ Inbox
 Field Templates
 ---------------
 
-Required
-........
-
-.. figure:: ../../img/inbox-fields-required.png
+.. figure:: ../../img/inbox-fields-1.png
    :align: center
 
-Optional
-........
+.. figure:: ../../img/inbox-fields-2.png
+   :align: center
 
-.. figure:: ../../img/inbox-fields-optional.png
+.. figure:: ../../img/inbox-fields-3.png
    :align: center
 
 Fields
@@ -36,9 +33,3 @@ Bold field names are required fields, others are optional.
    color       Color    Background color
    serie       Text     Text to display below each inbox
    ==========  =====    ======================================
-
-
-Library
--------
-
-http://philogb.github.io/jit/
