@@ -14,19 +14,24 @@ them such as filtering, clearing content etc.
 
    arc-map
    bars
-   bubble
+   bubbles
    calendar
    chart
+   donut
    gauge
    graph
+   icicle
    image
+   inbox
    map
    news
    odometer
    pie
    planetary
+   radar
    region-map
    stack
+   sunburst
    table
    template
    thematic-map
