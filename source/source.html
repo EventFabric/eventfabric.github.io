@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44215851-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
+    
+
+    <title>Source &mdash; Event Fabric 1.0 documentation</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Element" href="../element/index.html" />
+    <link rel="next" title="State" href="../state/state.html" />
+    <link rel="prev" title="Element" href="../element/index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../state/state.html" title="State"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../element/index.html" title="Element"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="../element/index.html" accesskey="U">Element</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="source">
+<span id="source-element"></span><h1>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/source-element1.png" src="../_images/source-element1.png" />
+</div>
+<p>A source is an element that makes events available to Event Fabric, at the moment
+the supported sources are:</p>
+<ul class="simple">
+<li>Event Fabric Source</li>
+<li>Sample Source</li>
+</ul>
+<p>Other sources will be added in the future via apps that can be activated when
+needed per dashboard.</p>
+<div class="section" id="event-fabric-source">
+<h2>Event Fabric Source<a class="headerlink" href="#event-fabric-source" title="Permalink to this headline">¶</a></h2>
+<p>This can be considered the standard event source, to configure you have to
+specify a channel and a username, after configuring, any event sent to that
+channel and by that username will be emitted by that source element.</p>
+</div>
+<div class="section" id="sample-event-source">
+<h2>Sample Event Source<a class="headerlink" href="#sample-event-source" title="Permalink to this headline">¶</a></h2>
+<p>Used to generate events without an actual source, mainly to prototype a
+dashboard or try something new.</p>
+</div>
+<div class="section" id="event-selected">
+<h2>Event Selected<a class="headerlink" href="#event-selected" title="Permalink to this headline">¶</a></h2>
+<p>This source emits an event each time an event is clicked on a widget which
+supports event selection (like news ticker, table etc.).</p>
+</div>
+<div class="section" id="event-selected-with-filter">
+<h2>Event Selected with Filter<a class="headerlink" href="#event-selected-with-filter" title="Permalink to this headline">¶</a></h2>
+<p>This source emits an event each time an event is clicked on a widget which
+supports event selection (like news ticker, table etc.), before emitting the
+event it filters the ones that are not in the filter list.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Source</a><ul>
+<li><a class="reference internal" href="#event-fabric-source">Event Fabric Source</a></li>
+<li><a class="reference internal" href="#sample-event-source">Sample Event Source</a></li>
+<li><a class="reference internal" href="#event-selected">Event Selected</a></li>
+<li><a class="reference internal" href="#event-selected-with-filter">Event Selected with Filter</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../element/index.html"
+                        title="previous chapter">Element</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../state/state.html"
+                        title="next chapter">State</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/source/source.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../state/state.html" title="State"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../element/index.html" title="Element"
+             >previous</a> |</li>
+        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="../element/index.html" >Element</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013, Javier Dall&#39; Amore, Mariano Guerra.
+  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.1.
+  <br />Theme based on <a href="http://readthedocs.org/">Read The Docs</a>
+
+</div>
+
+
+
+
+
+  </body>
+</html>

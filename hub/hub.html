@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44215851-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
+    
+
+    <title>Hub &mdash; Event Fabric 1.0 documentation</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Element" href="../element/index.html" />
+    <link rel="next" title="Filter" href="../filter/filter.html" />
+    <link rel="prev" title="State" href="../state/state.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../filter/filter.html" title="Filter"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../state/state.html" title="State"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="../element/index.html" accesskey="U">Element</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="hub">
+<span id="hub-element"></span><h1>Hub<a class="headerlink" href="#hub" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/hub-element1.png" src="../_images/hub-element1.png" />
+</div>
+<p>The hub element received an event from any of it sources and sends it to all
+of it&#8217;s targets.</p>
+<p>This element is only to organize the connections and avoid having &#8220;many to
+many&#8221; connections, for example having one source, one ticker and one state
+loader connected to 3 transformers. Without a hub it would require 9
+connections, with a hub it will require 6.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../state/state.html"
+                        title="previous chapter">State</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../filter/filter.html"
+                        title="next chapter">Filter</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/hub/hub.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../filter/filter.html" title="Filter"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../state/state.html" title="State"
+             >previous</a> |</li>
+        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="../element/index.html" >Element</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013, Javier Dall&#39; Amore, Mariano Guerra.
+  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.1.
+  <br />Theme based on <a href="http://readthedocs.org/">Read The Docs</a>
+
+</div>
+
+
+
+
+
+  </body>
+</html>

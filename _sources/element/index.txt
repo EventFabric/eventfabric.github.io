@@ -7,9 +7,11 @@ transform, filter or consume events, there are several elements available:
 .. toctree::
    :maxdepth: 2
 
-   source
-   state
-   hub
-   filter
-   transformer
-   sink
+   ../source/source
+   ../state/state
+   ../hub/hub
+   ../filter/filter
+   ../transformer/transformer
+   ../sink/sink
+   ../endpoint/endpoint
+   ../ticker/ticker

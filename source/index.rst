@@ -6,7 +6,7 @@
 Welcome to Event Fabric's documentation!
 ========================================
 
-Cosntents:
+Contents:
 
 .. toctree::
    :maxdepth: 2
