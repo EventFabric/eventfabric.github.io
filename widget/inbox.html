@@ -63,7 +63,7 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
     <link rel="up" title="Widgets" href="index.html" />
-    <link rel="next" title="Map" href="map.html" />
+    <link rel="next" title="Map" href="mapstraction.html" />
     <link rel="prev" title="Image" href="image.html" /> 
   </head>
   <body>
@@ -74,7 +74,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="map.html" title="Map"
+          <a href="mapstraction.html" title="Map"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="image.html" title="Image"
@@ -122,24 +122,229 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><strong>val</strong></td>
+<tr class="row-even"><td><strong>action</strong></td>
 <td>Text</td>
-<td>Value of the category for the specified serie</td>
-</tr>
-<tr class="row-odd"><td><strong>label</strong></td>
-<td>Text</td>
-<td>Text of the category</td>
-</tr>
-<tr class="row-even"><td>color</td>
-<td>Color</td>
-<td>Background color</td>
-</tr>
-<tr class="row-odd"><td>serie</td>
-<td>Text</td>
-<td>Text to display below each inbox</td>
+<td>object the describes what to do with the row</td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="section" id="actions">
+<h2>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="append">
+<h3>append<a class="headerlink" href="#append" title="Permalink to this headline">¶</a></h3>
+<p>Add a new row at the end of the inbox</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="10%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>name</em></td>
+<td>Text</td>
+<td>Name of the action: append</td>
+</tr>
+<tr class="row-odd"><td><em>id</em></td>
+<td>Text</td>
+<td>Row identifier</td>
+</tr>
+<tr class="row-even"><td>title</td>
+<td>Text</td>
+<td>Text with the title of the row</td>
+</tr>
+<tr class="row-odd"><td>description</td>
+<td>Text</td>
+<td>Text with the description of the row</td>
+</tr>
+<tr class="row-even"><td>date</td>
+<td>Number</td>
+<td>Timestamp with the date</td>
+</tr>
+<tr class="row-odd"><td>count</td>
+<td>Number</td>
+<td>Number of message with this description</td>
+</tr>
+<tr class="row-even"><td>tags</td>
+<td>List</td>
+<td>List with tags for the row</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="prepend">
+<h3>prepend<a class="headerlink" href="#prepend" title="Permalink to this headline">¶</a></h3>
+<p>Add a new row at the beginning of the inbox</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="10%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>name</em></td>
+<td>Text</td>
+<td>Name of the action: prepend</td>
+</tr>
+<tr class="row-odd"><td><em>id</em></td>
+<td>Text</td>
+<td>Row identifier</td>
+</tr>
+<tr class="row-even"><td>title</td>
+<td>Text</td>
+<td>Text with the title of the row</td>
+</tr>
+<tr class="row-odd"><td>description</td>
+<td>Text</td>
+<td>Text with the description of the row</td>
+</tr>
+<tr class="row-even"><td>date</td>
+<td>Number</td>
+<td>Timestamp with the date</td>
+</tr>
+<tr class="row-odd"><td>count</td>
+<td>Number</td>
+<td>Number of message with this description</td>
+</tr>
+<tr class="row-even"><td>tags</td>
+<td>List</td>
+<td>List with tags for the row</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="update">
+<h3>update<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="8%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>name</em></td>
+<td>Text</td>
+<td>Name of the action: update</td>
+</tr>
+<tr class="row-odd"><td><em>field</em></td>
+<td>Text</td>
+<td>Field to update(title, desc, date, count, tags)</td>
+</tr>
+<tr class="row-even"><td><em>id</em></td>
+<td>Text</td>
+<td>Row identifier</td>
+</tr>
+<tr class="row-odd"><td><em>value</em></td>
+<td>Text</td>
+<td>New value for the field</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="remove">
+<h3>remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="8%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>name</em></td>
+<td>Text</td>
+<td>Name of the action: remove</td>
+</tr>
+<tr class="row-odd"><td><em>id</em></td>
+<td>Text</td>
+<td>Row identifier</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sort">
+<h3>sort<a class="headerlink" href="#sort" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="11%" />
+<col width="71%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>name</em></td>
+<td>Text</td>
+<td>Name of the action: sort</td>
+</tr>
+<tr class="row-odd"><td><em>by</em></td>
+<td>Text</td>
+<td>Field used to sort</td>
+</tr>
+<tr class="row-even"><td><em>ascending</em></td>
+<td>Boolean</td>
+<td>Order ascending or descending</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mark">
+<h3>mark<a class="headerlink" href="#mark" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="11%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>name</em></td>
+<td>Text</td>
+<td>Name of the action: mark</td>
+</tr>
+<tr class="row-odd"><td><em>type</em></td>
+<td>Text</td>
+<td>Type of mark(selected, unselected, read, unread)</td>
+</tr>
+<tr class="row-even"><td><em>id</em></td>
+<td>Text</td>
+<td>Row identifier</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 
@@ -154,6 +359,15 @@
 <li><a class="reference internal" href="#">Inbox</a><ul>
 <li><a class="reference internal" href="#field-templates">Field Templates</a></li>
 <li><a class="reference internal" href="#fields">Fields</a></li>
+<li><a class="reference internal" href="#actions">Actions</a><ul>
+<li><a class="reference internal" href="#append">append</a></li>
+<li><a class="reference internal" href="#prepend">prepend</a></li>
+<li><a class="reference internal" href="#update">update</a></li>
+<li><a class="reference internal" href="#remove">remove</a></li>
+<li><a class="reference internal" href="#sort">sort</a></li>
+<li><a class="reference internal" href="#mark">mark</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -162,7 +376,7 @@
   <p class="topless"><a href="image.html"
                         title="previous chapter">Image</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="map.html"
+  <p class="topless"><a href="mapstraction.html"
                         title="next chapter">Map</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
@@ -193,7 +407,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="map.html" title="Map"
+          <a href="mapstraction.html" title="Map"
              >next</a> |</li>
         <li class="right" >
           <a href="image.html" title="Image"
