@@ -23,7 +23,7 @@ them such as filtering, clearing content etc.
    icicle
    image
    inbox
-   map
+   mapstraction
    news
    odometer
    pie
