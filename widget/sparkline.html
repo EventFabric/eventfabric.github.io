@@ -92,7 +92,7 @@
   <div class="section" id="sparkline">
 <span id="sparkline-widget"></span><h1>Sparkline<a class="headerlink" href="#sparkline" title="Permalink to this headline">¶</a></h1>
 <div class="figure align-center">
-<img alt="widget/../../img/sparkline.gif" src="widget/../../img/sparkline.gif" />
+<img alt="../_images/sparkline.gif" src="../_images/sparkline.gif" />
 </div>
 <div class="section" id="field-templates">
 <h2>Field Templates<a class="headerlink" href="#field-templates" title="Permalink to this headline">¶</a></h2>
@@ -127,46 +127,30 @@
 <tbody valign="top">
 <tr class="row-even"><td><strong>val</strong></td>
 <td>Number</td>
-<td>Number to user for action</td>
+<td>Number</td>
 </tr>
 <tr class="row-odd"><td><strong>label</strong></td>
 <td>Text</td>
-<td>Identifier for the serie of this value</td>
+<td>Text to show in the chart</td>
 </tr>
-<tr class="row-even"><td>color</td>
-<td>Color</td>
-<td>Line color</td>
-</tr>
-<tr class="row-odd"><td>action</td>
+<tr class="row-even"><td><strong>type</strong></td>
 <td>Text</td>
-<td>Name of the action, by default &#8220;add&#8221;</td>
+<td>Type of chart</td>
+</tr>
+<tr class="row-odd"><td>group</td>
+<td>Text</td>
+<td>Identifier for the group of this value</td>
+</tr>
+<tr class="row-even"><td>id</td>
+<td>Text</td>
+<td>Identifier for the serie of this value</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="actions">
-<h2>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="add">
-<h3>add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h3>
-<p>Increase the value identified by <em>label</em> by <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
-<p>Useful to accumulate by an identifier.</p>
-</div>
-<div class="section" id="substract">
-<h3>substract<a class="headerlink" href="#substract" title="Permalink to this headline">¶</a></h3>
-<p>Decrease the value identified by <em>label</em> by <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
-</div>
-<div class="section" id="set">
-<h3>set<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h3>
-<p>Set the value identified by <em>label</em> to <em>val</em> or 1 if <em>val</em> isn&#8217;t provided.</p>
-</div>
-<div class="section" id="remove">
-<h3>remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h3>
-<p>Removes the value identified by <em>label</em> from the displayed values.</p>
-</div>
-</div>
 <div class="section" id="library">
 <h2>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="http://www.humblesoftware.com/flotr2/">http://www.humblesoftware.com/flotr2/</a></p>
+<p><a class="reference external" href="http://omnipotent.net/jquery.sparkline/">http://omnipotent.net/jquery.sparkline/</a></p>
 </div>
 </div>
 
@@ -185,13 +169,6 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#fields">Fields</a></li>
-<li><a class="reference internal" href="#actions">Actions</a><ul>
-<li><a class="reference internal" href="#add">add</a></li>
-<li><a class="reference internal" href="#substract">substract</a></li>
-<li><a class="reference internal" href="#set">set</a></li>
-<li><a class="reference internal" href="#remove">remove</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#library">Library</a></li>
 </ul>
 </li>
