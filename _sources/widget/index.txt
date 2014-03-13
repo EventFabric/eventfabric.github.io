@@ -30,6 +30,7 @@ them such as filtering, clearing content etc.
    planetary
    radar
    region-map
+   sparkline
    stack
    sunburst
    table
