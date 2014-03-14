@@ -49,3 +49,23 @@ Event Selected with Filter
 This source emits an event each time an event is clicked on a widget which
 supports event selection (like news ticker, table etc.), before emitting the
 event it filters the ones that are not in the filter list.
+
+.. _pubnub:
+
+PubNub
+------
+
+PubNub source
+
+http://www.pubnub.com/
+
+.. _firebase:
+
+Firebase
+--------
+
+Firebase source
+
+https://www.firebase.com/
+
+
