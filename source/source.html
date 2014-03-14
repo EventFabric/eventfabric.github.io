@@ -92,7 +92,7 @@
   <div class="section" id="source">
 <span id="source-element"></span><h1>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h1>
 <div class="figure align-center">
-<img alt="../_images/source-element1.png" src="../_images/source-element1.png" />
+<img alt="../_images/source-element.png" src="../_images/source-element.png" />
 </div>
 <p>A source is an element that makes events available to Event Fabric, at the moment
 the supported sources are:</p>
@@ -103,23 +103,23 @@ the supported sources are:</p>
 <p>Other sources will be added in the future via apps that can be activated when
 needed per dashboard.</p>
 <div class="section" id="event-fabric-source">
-<h2>Event Fabric Source<a class="headerlink" href="#event-fabric-source" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Event Fabric Source<a class="headerlink" href="#event-fabric-source" title="Permalink to this headline">¶</a></h2>
 <p>This can be considered the standard event source, to configure you have to
 specify a channel and a username, after configuring, any event sent to that
 channel and by that username will be emitted by that source element.</p>
 </div>
 <div class="section" id="sample-event-source">
-<h2>Sample Event Source<a class="headerlink" href="#sample-event-source" title="Permalink to this headline">¶</a></h2>
+<span id="samplesource"></span><h2>Sample Event Source<a class="headerlink" href="#sample-event-source" title="Permalink to this headline">¶</a></h2>
 <p>Used to generate events without an actual source, mainly to prototype a
 dashboard or try something new.</p>
 </div>
 <div class="section" id="event-selected">
-<h2>Event Selected<a class="headerlink" href="#event-selected" title="Permalink to this headline">¶</a></h2>
+<span id="selected"></span><h2>Event Selected<a class="headerlink" href="#event-selected" title="Permalink to this headline">¶</a></h2>
 <p>This source emits an event each time an event is clicked on a widget which
 supports event selection (like news ticker, table etc.).</p>
 </div>
 <div class="section" id="event-selected-with-filter">
-<h2>Event Selected with Filter<a class="headerlink" href="#event-selected-with-filter" title="Permalink to this headline">¶</a></h2>
+<span id="selected-filter"></span><h2>Event Selected with Filter<a class="headerlink" href="#event-selected-with-filter" title="Permalink to this headline">¶</a></h2>
 <p>This source emits an event each time an event is clicked on a widget which
 supports event selection (like news ticker, table etc.), before emitting the
 event it filters the ones that are not in the filter list.</p>

@@ -15,6 +15,8 @@ the supported sources are:
 Other sources will be added in the future via apps that can be activated when
 needed per dashboard.
 
+.. _source:
+
 Event Fabric Source
 -------------------
 
@@ -22,17 +24,24 @@ This can be considered the standard event source, to configure you have to
 specify a channel and a username, after configuring, any event sent to that
 channel and by that username will be emitted by that source element.
 
+.. _samplesource:
+
 Sample Event Source
 -------------------
 
 Used to generate events without an actual source, mainly to prototype a
 dashboard or try something new.
 
+.. _selected:
+
 Event Selected
 --------------
 
 This source emits an event each time an event is clicked on a widget which
 supports event selection (like news ticker, table etc.).
+
+
+.. _selected-filter:
 
 Event Selected with Filter
 --------------------------
