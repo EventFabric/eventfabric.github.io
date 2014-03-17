@@ -11,6 +11,9 @@ the supported sources are:
 
 * Event Fabric Source
 * Sample Source
+* PubNub
+* Firebase
+
 
 Other sources will be added in the future via apps that can be activated when
 needed per dashboard.
@@ -55,17 +58,36 @@ event it filters the ones that are not in the filter list.
 PubNub
 ------
 
-PubNub source
+Receives events from a PubNub channel
 
 http://www.pubnub.com/
+
+.. table::
+
+   ==================  =======  ==========================================================================
+   Field Name          Type     Description
+   ==================  =======  ==========================================================================
+   **PubNub Channel**  Text     PubNub Channel
+   **Use Auth Key**    Boolean  Use Auth Key?
+   Auth Key            Text     Custom authentication token used by PAM
+   Subscribe Key       Text     This key allows the client access to a data channel on the PubNub network.
+   Publish Key         Text     This key allows access to sending data to a data channel.
+   **SSL**             Boolean  Enable SSL?
+   ==================  =======  ==========================================================================
 
 .. _firebase:
 
 Firebase
 --------
 
-Firebase source
+Receives events from a Firebase channel
 
 https://www.firebase.com/
 
+.. table::
 
+   =================  =====  ==========================================================
+   Field Name         Type   Description
+   =================  =====  ==========================================================
+   **Firebase URL**   Text   URL that specifies the root of the data you want to access
+   =================  =====  ==========================================================

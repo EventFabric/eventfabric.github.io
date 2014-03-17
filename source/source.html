@@ -99,6 +99,8 @@ the supported sources are:</p>
 <ul class="simple">
 <li>Event Fabric Source</li>
 <li>Sample Source</li>
+<li>PubNub</li>
+<li>Firebase</li>
 </ul>
 <p>Other sources will be added in the future via apps that can be activated when
 needed per dashboard.</p>
@@ -126,13 +128,71 @@ event it filters the ones that are not in the filter list.</p>
 </div>
 <div class="section" id="pubnub">
 <span id="id2"></span><h2>PubNub<a class="headerlink" href="#pubnub" title="Permalink to this headline">¶</a></h2>
-<p>PubNub source</p>
+<p>Receives events from a PubNub channel</p>
 <p><a class="reference external" href="http://www.pubnub.com/">http://www.pubnub.com/</a></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="7%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>PubNub Channel</strong></td>
+<td>Text</td>
+<td>PubNub Channel</td>
+</tr>
+<tr class="row-odd"><td><strong>Use Auth Key</strong></td>
+<td>Boolean</td>
+<td>Use Auth Key?</td>
+</tr>
+<tr class="row-even"><td>Auth Key</td>
+<td>Text</td>
+<td>Custom authentication token used by PAM</td>
+</tr>
+<tr class="row-odd"><td>Subscribe Key</td>
+<td>Text</td>
+<td>This key allows the client access to a data channel on the PubNub network.</td>
+</tr>
+<tr class="row-even"><td>Publish Key</td>
+<td>Text</td>
+<td>This key allows access to sending data to a data channel.</td>
+</tr>
+<tr class="row-odd"><td><strong>SSL</strong></td>
+<td>Boolean</td>
+<td>Enable SSL?</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="firebase">
 <span id="id3"></span><h2>Firebase<a class="headerlink" href="#firebase" title="Permalink to this headline">¶</a></h2>
-<p>Firebase source</p>
+<p>Receives events from a Firebase channel</p>
 <p><a class="reference external" href="https://www.firebase.com/">https://www.firebase.com/</a></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="6%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Firebase URL</strong></td>
+<td>Text</td>
+<td>URL that specifies the root of the data you want to access</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

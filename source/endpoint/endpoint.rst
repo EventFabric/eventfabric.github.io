@@ -30,12 +30,12 @@ http://www.pubnub.com/
    ==================  =======  ======================================
    Field Name          Type     Description
    ==================  =======  ======================================
-   **PubNub Channel**  Text     Channel
-   **Use Auth Key**    Boolean  Use Auth Key
-   Auth Key            Text     Auth Key
-   Subscribe Key       Text     Subscribe Key
-   Publish Key         Text     Publish Key
-   **SSL**             Boolean  SSL
+   **PubNub Channel**  Text     PubNub Channel
+   **Use Auth Key**    Boolean  Use Auth Key?
+   Auth Key            Text     Custom authentication token used by PAM
+   Subscribe Key       Text     This key allows the client access to a data channel on the PubNub network.
+   Publish Key         Text     This key allows access to sending data to a data channel.
+   **SSL**             Boolean  Enable SSL?
    ==================  =======  ======================================
 
 .. _firebase:
