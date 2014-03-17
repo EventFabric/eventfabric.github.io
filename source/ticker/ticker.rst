@@ -6,13 +6,12 @@ Ticker
 .. figure:: ../../img/timer-element.png
    :align: center
 
+The ticker element generates a configured event at configured rate.
 
 .. _ticker:
 
 Ticker
 ------
-
-The ticker element generates a configured event at configured rate.
 
 This element is used to trigger an action periodically, like check for absense
 of events, alarms when something takes longer than expected etc.
@@ -22,6 +21,6 @@ of events, alarms when something takes longer than expected etc.
 Ticker Json
 -----------
 
-The ticker json element generates a new event configured in json perdiocally.
+The ticker json element generates perdiocally a new event taking as value the next element in an array configured in json.
 
-If loop is selected, when the last event configured is sent, it starts all over again from the beginning.
+If loop is selected, when the last event configured is sent, it restarts from the beginning.

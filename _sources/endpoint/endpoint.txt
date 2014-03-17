@@ -6,6 +6,9 @@ EndPoint
 .. figure:: ../../img/endpoint-element.png
    :align: center
 
+
+Sends an event to an external service
+
 Event Fabric
 ------------
 

@@ -22,6 +22,6 @@ of events, alarms when something takes longer than expected etc.
 Ticker Json
 -----------
 
-The ticker json element generates a new event configured in json perdiocally.
+The ticker json element generates perdiocally a new event taking as value the next element in an array configured in json.
 
-If loop is selected, when the last event configured is sent, it starts all over again from the beginning.
+If loop is selected, when the last event configured is sent, it restarts from the beginning.
