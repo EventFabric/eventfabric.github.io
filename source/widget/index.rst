@@ -17,6 +17,7 @@ them such as filtering, clearing content etc.
    bubble
    calendar
    chart
+   echarts
    gauge
    graph
    image
