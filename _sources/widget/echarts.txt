@@ -13,7 +13,7 @@ Widgets
 .. toctree::
    :maxdepth: 2
 
-   echarts-bar
+   echarts-bars
    echarts-chord
    echarts-force
    echarts-funnel

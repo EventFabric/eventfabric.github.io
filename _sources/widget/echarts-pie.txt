@@ -12,13 +12,13 @@ Field Templates
 Required
 ........
 
-.. figure:: ../../img/echarts-pie-fields-required.png
+.. figure:: ../../img/echarts-fields-required.png
    :align: center
 
 Optional
 ........
 
-.. figure:: ../../img/echarts-pie-fields-optional.png
+.. figure:: ../../img/echarts-fields-optional.png
    :align: center
 
 Fields

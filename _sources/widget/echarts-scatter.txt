@@ -12,13 +12,16 @@ Field Templates
 Required
 ........
 
-.. figure:: ../../img/echarts-scatter-fields-required.png
+.. figure:: ../../img/echarts-fields-required.png
+   :align: center
+
+.. figure:: ../../img/echarts-fields-scatter.png
    :align: center
 
 Optional
 ........
 
-.. figure:: ../../img/echarts-scatter-fields-optional.png
+.. figure:: ../../img/echarts-fields-optional.png
    :align: center
 
 Fields

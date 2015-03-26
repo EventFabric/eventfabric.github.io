@@ -12,13 +12,13 @@ Field Templates
 Required
 ........
 
-.. figure:: ../../img/echarts-funnel-fields-required.png
+.. figure:: ../../img/echarts-fields-required.png
    :align: center
 
 Optional
 ........
 
-.. figure:: ../../img/echarts-funnel-fields-optional.png
+.. figure:: ../../img/echarts-fields-optional.png
    :align: center
 
 Fields
