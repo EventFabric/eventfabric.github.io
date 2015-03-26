@@ -15,6 +15,7 @@ Required
 .. figure:: ../../img/echarts-fields-required.png
    :align: center
 
+
 .. figure:: ../../img/echarts-fields-scatter.png
    :align: center
 
