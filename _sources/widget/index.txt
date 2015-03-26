@@ -13,6 +13,7 @@ them such as filtering, clearing content etc.
    :maxdepth: 2
 
    arc-map
+   area-chart
    bars
    bubbles
    calendar
@@ -31,7 +32,8 @@ them such as filtering, clearing content etc.
    radar
    region-map
    sparkline
-   stack
+   stack-chart
+   stack-pie-chart
    sunburst
    table
    template

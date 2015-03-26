@@ -1,9 +1,9 @@
-.. _stack-widget:
+.. _stack-pie-chart-widget:
 
-Stack Chart
-===========
+Stack Pie Chart
+===============
 
-.. figure:: ../../img/stack.gif
+.. figure:: ../../img/stack-pie-chart.gif
    :align: center
 
 Field Templates
@@ -12,13 +12,13 @@ Field Templates
 Required
 ........
 
-.. figure:: ../../img/stack-fields-required.png
+.. figure:: ../../img/stack-pie-chart-fields-required.png
    :align: center
 
 Optional
 ........
 
-.. figure:: ../../img/stack-fields-optional.png
+.. figure:: ../../img/stack-pie-chart-fields-optional.png
    :align: center
 
 Fields
