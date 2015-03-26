@@ -18,7 +18,7 @@ them such as filtering, clearing content etc.
    calendar
    chart
    donut
-   gauge
+   echarts
    graph
    icicle
    image

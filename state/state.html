@@ -6,16 +6,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-44215851-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      ga('create', 'UA-44215851-1', 'eventfabric.github.io');
+      ga('send', 'pageview');
     </script>
     <style>#disqus_thread{background-color: #f5f5f5}</style>
     <script type="text/javascript">
@@ -61,7 +58,10 @@
     <script type="text/javascript" src="../../_static/searchtools.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" /> 
+    <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Element" href="../element/index.html" />
+    <link rel="next" title="Hub" href="../hub/hub.html" />
+    <link rel="prev" title="Source" href="../source/source.html" /> 
   </head>
   <body>
     <div class="related">
@@ -70,7 +70,14 @@
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="../hub/hub.html" title="Hub"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../source/source.html" title="Source"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="../element/index.html" accesskey="U">Element</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -82,7 +89,7 @@
   <div class="section" id="state">
 <span id="state-element"></span><h1>State<a class="headerlink" href="#state" title="Permalink to this headline">¶</a></h1>
 <div class="figure align-center">
-<img alt="../_images/loader-element1.png" src="../_images/loader-element1.png" />
+<img alt="../_images/loader-element.png" src="../_images/loader-element.png" />
 </div>
 <p>The state element loads a configured number of events from a set of specified
 sources. When the dashboard loads, events are loaded, sorted by the time they
@@ -97,6 +104,12 @@ sources start receiving events.</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../source/source.html"
+                        title="previous chapter">Source</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../hub/hub.html"
+                        title="next chapter">Hub</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/state/state.txt"
@@ -125,12 +138,19 @@ sources start receiving events.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="../hub/hub.html" title="Hub"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../source/source.html" title="Source"
+             >previous</a> |</li>
+        <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
+          <li><a href="../element/index.html" >Element</a> &raquo;</li> 
       </ul>
     </div>
 <div class="footer">
     &copy; Copyright 2013, Javier Dall&#39; Amore, Mariano Guerra.
-  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.1.
+  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
   <br />Theme based on <a href="http://readthedocs.org/">Read The Docs</a>
 
 </div>

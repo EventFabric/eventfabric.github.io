@@ -6,16 +6,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-44215851-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      ga('create', 'UA-44215851-1', 'eventfabric.github.io');
+      ga('send', 'pageview');
     </script>
     <style>#disqus_thread{background-color: #f5f5f5}</style>
     <script type="text/javascript">
@@ -64,7 +61,7 @@
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html" />
     <link rel="up" title="Widgets" href="index.html" />
     <link rel="next" title="Icicle" href="icicle.html" />
-    <link rel="prev" title="Gauge" href="gauge.html" /> 
+    <link rel="prev" title="Scatter Chart" href="echarts-scatter.html" /> 
   </head>
   <body>
     <div class="related">
@@ -77,7 +74,7 @@
           <a href="icicle.html" title="Icicle"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="gauge.html" title="Gauge"
+          <a href="echarts-scatter.html" title="Scatter Chart"
              accesskey="P">previous</a> |</li>
         <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Widgets</a> &raquo;</li> 
@@ -307,8 +304,8 @@ just travel a number of <em>hops</em> if specified.</p>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="gauge.html"
-                        title="previous chapter">Gauge</a></p>
+  <p class="topless"><a href="echarts-scatter.html"
+                        title="previous chapter">Scatter Chart</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="icicle.html"
                         title="next chapter">Icicle</a></p>
@@ -344,7 +341,7 @@ just travel a number of <em>hops</em> if specified.</p>
           <a href="icicle.html" title="Icicle"
              >next</a> |</li>
         <li class="right" >
-          <a href="gauge.html" title="Gauge"
+          <a href="echarts-scatter.html" title="Scatter Chart"
              >previous</a> |</li>
         <li><a href="../index.html">Event Fabric 1.0 documentation</a> &raquo;</li>
           <li><a href="index.html" >Widgets</a> &raquo;</li> 
@@ -352,7 +349,7 @@ just travel a number of <em>hops</em> if specified.</p>
     </div>
 <div class="footer">
     &copy; Copyright 2013, Javier Dall&#39; Amore, Mariano Guerra.
-  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.1.
+  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
   <br />Theme based on <a href="http://readthedocs.org/">Read The Docs</a>
 
 </div>
