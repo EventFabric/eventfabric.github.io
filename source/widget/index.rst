@@ -18,7 +18,6 @@ them such as filtering, clearing content etc.
    calendar
    chart
    echarts
-   gauge
    graph
    image
    map
