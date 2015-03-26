@@ -95,6 +95,39 @@
 one or more events with the received value and any field added using specific
 blocks to add or modify fields.</p>
 <p>The logic is done through a visual language.</p>
+<div class="section" id="multiple-outputs">
+<h2>Multiple Outputs<a class="headerlink" href="#multiple-outputs" title="Permalink to this headline">¶</a></h2>
+<p>If a single event need to be splitted in multiple ones, you can create an <strong>_output</strong> list and append items to it.</p>
+<div class="section" id="loop-in-array">
+<h3>Loop in array<a class="headerlink" href="#loop-in-array" title="Permalink to this headline">¶</a></h3>
+<p>For example, if you have an array called data inside <strong>value</strong>:</p>
+<div class="figure align-center">
+<img alt="../_images/transformer-multiple-input.png" src="../_images/transformer-multiple-input.png" />
+</div>
+<p>You can generate a different output for each item in the array.</p>
+<div class="figure align-center">
+<img alt="../_images/transformer-multiple-outputs-array.png" src="../_images/transformer-multiple-outputs-array.png" />
+</div>
+<p>Each output will be considered as a different event:</p>
+<div class="figure">
+<img alt="../_images/transformer-multiple-output.png" src="../_images/transformer-multiple-output.png" />
+</div>
+</div>
+<div class="section" id="loop-in-key-value">
+<h3>Loop in key/value<a class="headerlink" href="#loop-in-key-value" title="Permalink to this headline">¶</a></h3>
+<p>In case you want to create a different output for each key inside <strong>value</strong></p>
+<div class="figure align-center">
+<img alt="../_images/transformer-multiple-input-obj.png" src="../_images/transformer-multiple-input-obj.png" />
+</div>
+<div class="figure align-center">
+<img alt="../_images/transformer-multiple-outputs-object.png" src="../_images/transformer-multiple-outputs-object.png" />
+</div>
+<div class="figure align-center">
+<img alt="../_images/transformer-multiple-output-obj.png" src="../_images/transformer-multiple-output-obj.png" />
+</div>
+<p>The first item with <strong>action=clear</strong> means that the widget should clear its content before the future events are processed.</p>
+</div>
+</div>
 </div>
 
 
@@ -103,6 +136,18 @@ blocks to add or modify fields.</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Transformer</a><ul>
+<li><a class="reference internal" href="#multiple-outputs">Multiple Outputs</a><ul>
+<li><a class="reference internal" href="#loop-in-array">Loop in array</a></li>
+<li><a class="reference internal" href="#loop-in-key-value">Loop in key/value</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="../filter/filter.html"
                         title="previous chapter">Filter</a></p>
