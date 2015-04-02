@@ -9,8 +9,10 @@ Source
 A source is an element that makes events available to Event Fabric, at the moment
 the supported sources are:
 
-* Event Fabric Source
-* Sample Source
+* Event Selected
+* Event Selected with Filter
+* Event Source
+* Sample Event Source
 * PubNub
 * Firebase
 
@@ -18,10 +20,27 @@ the supported sources are:
 Other sources will be added in the future via apps that can be activated when
 needed per dashboard.
 
+.. _selected:
+
+Event Selected
+--------------
+
+This source emits an event each time an event is clicked on a widget which
+supports event selection (like news ticker, table etc.).
+
+.. _selected-filter:
+
+Event Selected with Filter
+--------------------------
+
+This source emits an event each time an event is clicked on a widget which
+supports event selection (like news ticker, table etc.), before emitting the
+event it filters the ones that are not in the filter list.
+
 .. _source:
 
-Event Fabric Source
--------------------
+Event Source
+------------
 
 This can be considered the standard event source, to configure you have to
 specify a channel and a username, after configuring, any event sent to that
@@ -34,24 +53,6 @@ Sample Event Source
 
 Used to generate events without an actual source, mainly to prototype a
 dashboard or try something new.
-
-.. _selected:
-
-Event Selected
---------------
-
-This source emits an event each time an event is clicked on a widget which
-supports event selection (like news ticker, table etc.).
-
-
-.. _selected-filter:
-
-Event Selected with Filter
---------------------------
-
-This source emits an event each time an event is clicked on a widget which
-supports event selection (like news ticker, table etc.), before emitting the
-event it filters the ones that are not in the filter list.
 
 .. _pubnub:
 
