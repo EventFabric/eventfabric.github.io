@@ -49,3 +49,11 @@ In case you want to create a different output for each key inside **value**
    :align: center
 
 The first item with **action=clear** means that the widget should clear its content before the future events are processed.
+
+Store
+-----
+
+These blocks allow you to save values in a local key/value store in your own browser. This information can be accessed in other execution of the same transformer when a new event arrives or be shared between different transformers.
+
+.. figure:: ../../img/store-fields.png
+   :align: center
