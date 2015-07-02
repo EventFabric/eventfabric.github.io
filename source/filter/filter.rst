@@ -15,3 +15,6 @@ a visual language.
 
 To start with a pre made filter expand the *Templates* section and select 
 *Filter Templates* there you can find some pre made blocks to start filtering.
+
+.. figure:: ../../img/filter.gif
+   :align: center
