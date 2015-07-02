@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ECharts &mdash; Event Fabric 1.0 documentation</title>
+  <title>Status Chart &mdash; Event Fabric 1.0 documentation</title>
   
 
   
@@ -35,9 +35,9 @@
         <link rel="author" title="About these documents"
               href="../about.html"/>
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html"/>
-        <link rel="up" title="Widgets" href="index.html"/>
-        <link rel="next" title="Bars Chart" href="echarts-bars.html"/>
-        <link rel="prev" title="Donut" href="donut.html"/> 
+        <link rel="up" title="ECharts" href="echarts.html"/>
+        <link rel="next" title="Graph Widget" href="graph.html"/>
+        <link rel="prev" title="Scatter Chart" href="echarts-scatter.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -93,7 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="calendar.html">Calendar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chart.html">Chart</a></li>
 <li class="toctree-l2"><a class="reference internal" href="donut.html">Donut</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">ECharts</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="echarts.html">ECharts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="graph.html">Graph Widget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="icicle.html">Icicle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="image.html">Image</a></li>
@@ -141,10 +141,12 @@
       
           <li><a href="index.html">Widgets</a> &raquo;</li>
       
-    <li>ECharts</li>
+          <li><a href="echarts.html">ECharts</a> &raquo;</li>
+      
+    <li>Status Chart</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/widget/echarts.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/widget/echarts-status.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -152,88 +154,103 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="echarts">
-<span id="id1"></span><h1>ECharts<a class="headerlink" href="#echarts" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="status-chart">
+<span id="echarts-status-widget"></span><h1>Status Chart<a class="headerlink" href="#status-chart" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/echarts-status.gif" src="../_images/echarts-status.gif" />
+</div>
+<div class="section" id="field-templates">
+<h2>Field Templates<a class="headerlink" href="#field-templates" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="required">
+<h3>Required<a class="headerlink" href="#required" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<img alt="../_images/echarts-status-fields-required.png" src="../_images/echarts-status-fields-required.png" />
+</div>
+</div>
+<div class="section" id="optional">
+<h3>Optional<a class="headerlink" href="#optional" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center">
+<img alt="../_images/echarts-status-fields-optional.png" src="../_images/echarts-status-fields-optional.png" />
+</div>
+</div>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<p>Bold field names are required fields, others are optional.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="11%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>Text</td>
+<td>Identifier of this circle</td>
+</tr>
+<tr class="row-odd"><td><strong>val</strong></td>
+<td>Number</td>
+<td>Number to show inside the circle</td>
+</tr>
+<tr class="row-even"><td><strong>label</strong></td>
+<td>Text</td>
+<td>Label to show inside the circle</td>
+</tr>
+<tr class="row-odd"><td><strong>x</strong></td>
+<td>Text</td>
+<td>X position of the circle</td>
+</tr>
+<tr class="row-even"><td><strong>y</strong></td>
+<td>Text</td>
+<td>Y position of the circle</td>
+</tr>
+<tr class="row-odd"><td><strong>color</strong></td>
+<td>Color</td>
+<td>Background color for the circle</td>
+</tr>
+<tr class="row-even"><td><strong>from</strong></td>
+<td>Text</td>
+<td>Outline start point (0 to 24)</td>
+</tr>
+<tr class="row-odd"><td><strong>to</strong></td>
+<td>Text</td>
+<td>Outline end point (0 to 24)</td>
+</tr>
+<tr class="row-even"><td>innerline</td>
+<td>Text</td>
+<td>Innerline radious from and to</td>
+</tr>
+<tr class="row-odd"><td>outerline</td>
+<td>Text</td>
+<td>Outerline radious from and to</td>
+</tr>
+<tr class="row-even"><td>fontColor</td>
+<td>Text</td>
+<td>Label color(default white)</td>
+</tr>
+<tr class="row-odd"><td>fontSize</td>
+<td>Text</td>
+<td>Label size(default 15)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="actions">
+<h2>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="init">
+<h3>init<a class="headerlink" href="#init" title="Permalink to this headline">¶</a></h3>
+<p>Init action only set the val, fontSize and fontColor if it was not setted before.</p>
+</div>
+</div>
 <div class="section" id="library">
 <h2>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://echarts.baidu.com/index-en.html">http://echarts.baidu.com/index-en.html</a></p>
-</div>
-<div class="section" id="widgets">
-<h2>Widgets<a class="headerlink" href="#widgets" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="echarts-bars.html">Bars Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-bars.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-bars.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-bars.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-bars.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-chord.html">Chord Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-chord.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-chord.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-chord.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-chord.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-force.html">Force Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-force.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-force.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-force.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-force.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-funnel.html">Funnel Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-funnel.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-funnel.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-funnel.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-funnel.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-gauge.html">Gauge Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-gauge.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-gauge.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-gauge.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-gauge.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-line.html">Line Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-line.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-line.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-line.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-line.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-pie.html">Pie Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-pie.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-pie.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-pie.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-pie.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-radar.html">Radar Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-radar.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-radar.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-radar.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-radar.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-scatter.html">Scatter Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-scatter.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-scatter.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-scatter.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-scatter.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts-status.html">Status Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts-status.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-status.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-status.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts-status.html#library">Library</a></li>
-</ul>
-</li>
-</ul>
-</div>
 </div>
 </div>
 
@@ -243,10 +260,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="echarts-bars.html" class="btn btn-neutral float-right" title="Bars Chart">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="graph.html" class="btn btn-neutral float-right" title="Graph Widget">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="donut.html" class="btn btn-neutral" title="Donut"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="echarts-scatter.html" class="btn btn-neutral" title="Scatter Chart"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

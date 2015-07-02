@@ -22,3 +22,4 @@ Widgets
    echarts-pie
    echarts-radar
    echarts-scatter
+   echarts-status
