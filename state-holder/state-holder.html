@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Element &mdash; Event Fabric 1.0 documentation</title>
+  <title>State Holder &mdash; Event Fabric 1.0 documentation</title>
   
 
   
@@ -35,8 +35,9 @@
         <link rel="author" title="About these documents"
               href="../about.html"/>
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="Element" href="../element/index.html"/>
         <link rel="next" title="EndPoint" href="../endpoint/endpoint.html"/>
-        <link rel="prev" title="Bitcoin Dashboard Tutorial" href="../tutorials/bitcoin/index.html"/> 
+        <link rel="prev" title="Widget" href="../sink/sink.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -73,16 +74,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/bitcoin/index.html">Bitcoin Dashboard Tutorial</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Element</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../endpoint/endpoint.html">EndPoint</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../filter/filter.html">Filter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../hub/hub.html">Hub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sink/sink.html">Widget</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../element/index.html">Element</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../source/source.html">Source</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../state/state.html">State</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../state-holder/state-holder.html">State Holder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ticker/ticker.html">Ticker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hub/hub.html">Hub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filter/filter.html">Filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../transformer/transformer.html">Transformer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sink/sink.html">Widget</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">State Holder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../endpoint/endpoint.html">EndPoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ticker/ticker.html">Ticker</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../widget/index.html">Widgets</a><ul>
@@ -139,10 +140,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>Element</li>
+          <li><a href="../element/index.html">Element</a> &raquo;</li>
+      
+    <li>State Holder</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/element/index.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/state-holder/state-holder.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -150,47 +153,12 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="element">
-<h1>Element<a class="headerlink" href="#element" title="Permalink to this headline">¶</a></h1>
-<p>An Element is a visual representation of something that can either generate,
-transform, filter or consume events, there are several elements available:</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../endpoint/endpoint.html">EndPoint</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../endpoint/endpoint.html#event-fabric">Event Fabric</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../endpoint/endpoint.html#pubnub">PubNub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../endpoint/endpoint.html#firebase">Firebase</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../filter/filter.html">Filter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hub/hub.html">Hub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sink/sink.html">Widget</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../source/source.html">Source</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../source/source.html#event-selected">Event Selected</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../source/source.html#event-selected-with-filter">Event Selected with Filter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../source/source.html#event-source">Event Source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../source/source.html#sample-event-source">Sample Event Source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../source/source.html#pubnub">PubNub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../source/source.html#firebase">Firebase</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../state/state.html">State</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../state/state.html#event-history">Event History</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../state/state.html#sample-event-history">Sample Event History</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../state-holder/state-holder.html">State Holder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ticker/ticker.html">Ticker</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ticker/ticker.html#id1">Ticker</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ticker/ticker.html#ticker-json">Ticker Json</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../transformer/transformer.html">Transformer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../transformer/transformer.html#multiple-outputs">Multiple Outputs</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="state-holder">
+<span id="state-holder-element"></span><h1>State Holder<a class="headerlink" href="#state-holder" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/state-holder-element.png" src="../_images/state-holder-element.png" />
 </div>
+<p>An state holder is an element that allows you to generate a new event based in the acumulation and preprocessing of multiple event from the same or different sources.</p>
 </div>
 
 
@@ -202,7 +170,7 @@ transform, filter or consume events, there are several elements available:</p>
         <a href="../endpoint/endpoint.html" class="btn btn-neutral float-right" title="EndPoint">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../tutorials/bitcoin/index.html" class="btn btn-neutral" title="Bitcoin Dashboard Tutorial"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../sink/sink.html" class="btn btn-neutral" title="Widget"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
