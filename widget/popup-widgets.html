@@ -1,0 +1,647 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44215851-1', 'eventfabric.github.io');
+      ga('send', 'pageview');
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Popup Widgets &mdash; Event Fabric 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="author" title="About these documents"
+              href="../about.html"/>
+    <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html"/>
+        <link rel="prev" title="Traffic Lights" href="traffic-lights.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> Event Fabric
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About Event Fabric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/bitcoin/index.html">Bitcoin Dashboard Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../element/index.html">Element</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../endpoint/endpoint.html">EndPoint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../endpoint/endpoint.html#event-fabric">Event Fabric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../endpoint/endpoint.html#pubnub">PubNub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../endpoint/endpoint.html#firebase">Firebase</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../filter/filter.html">Filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hub/hub.html">Hub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sink/sink.html">Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../source/source.html">Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../source/source.html#event-selected">Event Selected</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../source/source.html#event-selected-with-filter">Event Selected with Filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../source/source.html#event-source">Event Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../source/source.html#sample-event-source">Sample Event Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../source/source.html#pubnub">PubNub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../source/source.html#firebase">Firebase</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../state/state.html">State</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../state/state.html#event-history">Event History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../state/state.html#sample-event-history">Sample Event History</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../state-holder/state-holder.html">State Holder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ticker/ticker.html">Ticker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ticker/ticker.html#id1">Ticker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ticker/ticker.html#ticker-json">Ticker Json</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../transformer/transformer.html">Transformer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../transformer/transformer.html#multiple-outputs">Multiple Outputs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../transformer/transformer.html#loop-in-array">Loop in array</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../transformer/transformer.html#loop-in-key-value">Loop in key/value</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Widgets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arc-map.html">Arc Map</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arc-map.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arc-map.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arc-map.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arc-map.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="arc-map.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="area-chart.html">Area Chart</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="area-chart.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="area-chart.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="area-chart.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="area-chart.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="area-chart.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bars.html">Bars Chart</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bars.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bars.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bars.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bars.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bars.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bars.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bars.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bars.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bars.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bars.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bubbles.html">Bubble Chart</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bubbles.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bubbles.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bubbles.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bubbles.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bubbles.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bubbles.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bubbles.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bubbles.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="calendar.html">Calendar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="calendar.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="calendar.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="calendar.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="calendar.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="calendar.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="calendar.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="calendar.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chart.html">Chart</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chart.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chart.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chart.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chart.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chart.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chart.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="donut.html">Donut</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="donut.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="donut.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="donut.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="donut.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="donut.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="donut.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="donut.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="donut.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="donut.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="donut.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="echarts.html">ECharts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="echarts.html#library">Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="echarts.html#widgets">Widgets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="echarts-bars.html">Bars Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-chord.html">Chord Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-force.html">Force Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-funnel.html">Funnel Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-gauge.html">Gauge Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-line.html">Line Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-pie.html">Pie Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-radar.html">Radar Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-scatter.html">Scatter Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="echarts-status.html">Status Chart</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="graph.html">Graph Widget</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="graph.html#field-templates">Field Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph.html#fields">Fields</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="graph.html#graph">Graph</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="graph.html#actions">Actions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="icicle.html">Icicle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="icicle.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="icicle.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="icicle.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="icicle.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="icicle.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="icicle.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="icicle.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="icicle.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="icicle.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="icicle.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">Image</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="image.html#required">Required</a></li>
+<li class="toctree-l3"><a class="reference internal" href="image.html#optional">Optional</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="image.html#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inbox.html">Inbox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="inbox.html#field-templates">Field Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inbox.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="inbox.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="inbox.html#append">append</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inbox.html#prepend">prepend</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inbox.html#update">update</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inbox.html#remove">remove</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inbox.html#sort">sort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inbox.html#mark">mark</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mapstraction.html">Map</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mapstraction.html#required">Required</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mapstraction.html#optional">Optional</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mapstraction.html#fields">Fields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mapstraction.html#actions">Actions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mapstraction.html#center">center</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mapstraction.html#clear">clear</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="mapstraction.html#library">Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="news.html">News Ticker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="news.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="news.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="news.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="news.html#fields">Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="odometer.html">Odometer Widget</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="odometer.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="odometer.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="odometer.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="odometer.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="odometer.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="odometer.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="odometer.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="odometer.html#set">set</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="odometer.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pie.html">Pie Chart</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pie.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pie.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pie.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pie.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pie.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pie.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pie.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pie.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pie.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pie.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="planetary.html">Planetary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="planetary.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="planetary.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="planetary.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="planetary.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="planetary.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="radar.html">Radar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="radar.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="radar.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="radar.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="radar.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="radar.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="radar.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="radar.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="radar.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="radar.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="radar.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="region-map.html">Region Map</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="region-map.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="region-map.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="region-map.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="region-map.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="region-map.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="region-map.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="region-map.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="region-map.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="region-map.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="region-map.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sparkline.html">Sparkline</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sparkline.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sparkline.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sparkline.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sparkline.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sparkline.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stack-chart.html">Stack Chart</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="stack-chart.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="stack-chart.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stack-chart.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stack-chart.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stack-chart.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stack-pie-chart.html">Stack Pie Chart</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="stack-pie-chart.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="stack-pie-chart.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stack-pie-chart.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stack-pie-chart.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stack-pie-chart.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sunburst.html">Sunburst</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sunburst.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sunburst.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sunburst.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sunburst.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sunburst.html#actions">Actions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sunburst.html#add">add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sunburst.html#substract">substract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sunburst.html#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sunburst.html#remove">remove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sunburst.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="table.html">Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="table.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="table.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="table.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#fields">Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="template.html">Template</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="template.html#placeholders">Placeholders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="template.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="thematic-map.html">Thematic Map</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="thematic-map.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="thematic-map.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="thematic-map.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="thematic-map.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="thematic-map.html#label">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="thematic-map.html#library">Library</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="traffic-lights.html">Traffic Lights</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="traffic-lights.html#field-templates">Field Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="traffic-lights.html#required">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traffic-lights.html#optional">Optional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="traffic-lights.html#fields">Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="traffic-lights.html#library">Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Popup Widgets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#displaying-one-off-popup-widgets">Displaying one off Popup Widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displaying-and-updating-reusing-a-popup-widget">Displaying and updating/reusing a Popup Widget</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Event Fabric</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Popup Widgets</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/widget/popup-widgets.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="popup-widgets">
+<h1>Popup Widgets<a class="headerlink" href="#popup-widgets" title="Permalink to this headline">¶</a></h1>
+<p>Popup widgets are widgets that aren&#8217;t displayed directly in the dashboard, but
+are displayed as a independent overlay window in response to some event.</p>
+<p>A Popup widget can be any standard widget, the only difference is that when
+selecting the widget you have to check the <strong>Popup Widget</strong> checkbox.</p>
+<div class="figure align-center">
+<img alt="../_images/popup-widget-config.png" src="../_images/popup-widget-config.png" />
+</div>
+<p>After configuring the widget you won&#8217;t see it displayed in the dashboard,
+that&#8217;s normal, to display it you need to send one of two specific fields.</p>
+<div class="section" id="displaying-one-off-popup-widgets">
+<h2>Displaying one off Popup Widgets<a class="headerlink" href="#displaying-one-off-popup-widgets" title="Permalink to this headline">¶</a></h2>
+<p>If you need to display information in a widget in response to an event but then
+you don&#8217;t need to update the information or it&#8217;s ok to display the next
+interaction in another Popup Widget then you just have to set the <strong>show</strong>
+field to <strong>true</strong> in the event that is sent to the widget.</p>
+<div class="figure align-center">
+<img alt="../_images/popup-widget-show-true.png" src="../_images/popup-widget-show-true.png" />
+</div>
+</div>
+<div class="section" id="displaying-and-updating-reusing-a-popup-widget">
+<h2>Displaying and updating/reusing a Popup Widget<a class="headerlink" href="#displaying-and-updating-reusing-a-popup-widget" title="Permalink to this headline">¶</a></h2>
+<p>If you need to display information in a widget in response to an event and then
+you want to update the information of the widget in response to other events,
+and maybe have more than one popup widget at the same time displayed with a way
+to differentitate them then instead of setting the <strong>show</strong> field you set the
+<strong>_instanceId</strong> field to any value that will be used to identify the popup
+widget unambiguous way.</p>
+<div class="figure align-center">
+<img alt="../_images/popup-widget-instance-id.png" src="../_images/popup-widget-instance-id.png" />
+</div>
+<p>Then, every time you want to update the content of the popup widget you have
+to send the new information with the same <strong>_instanceId</strong> field.</p>
+<p>If the user closes the popup and you send an event with a previous
+<strong>_instanceId</strong> Event Fabric will reopen the popup dialog with the result of
+processing only the last event, as if the Widget was cleared before receiving
+the event.</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="traffic-lights.html" class="btn btn-neutral" title="Traffic Lights" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Javier Dall&#39; Amore, Mariano Guerra.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
