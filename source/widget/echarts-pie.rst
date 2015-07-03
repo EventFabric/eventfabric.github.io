@@ -21,6 +21,13 @@ Optional
 .. figure:: ../../img/echarts-fields-optional.png
    :align: center
 
+Configuration
+-------------
+
+Radius (inner/outer) is useful to convert the pie chart in a donut chart. 
+
+30%,80% means that the inner line will start at 30% and the outer line ends at 80% of the total widget area.
+
 Fields
 ------
 
