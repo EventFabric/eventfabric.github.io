@@ -13,28 +13,20 @@ them such as filtering, clearing content etc.
    :maxdepth: 2
 
    arc-map
-   area-chart
    bars
    bubbles
    calendar
    chart
-   donut
    echarts
-   graph
-   icicle
    image
-   inbox
-   mapstraction
    news
+   mapstraction
    odometer
    pie
    planetary
    radar
    region-map
    sparkline
-   stack-chart
-   stack-pie-chart
-   sunburst
    table
    template
    thematic-map
