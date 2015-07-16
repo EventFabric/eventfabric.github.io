@@ -12,13 +12,11 @@ them such as filtering, clearing content etc.
 .. toctree::
    :maxdepth: 2
 
-   arc-map
    bars
    bubbles
    calendar
    chart
    echarts
-   image
    news
    mapstraction
    odometer
@@ -26,8 +24,6 @@ them such as filtering, clearing content etc.
    planetary
    radar
    region-map
-   sparkline
    table
    template
    thematic-map
-   traffic-lights
