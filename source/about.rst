@@ -33,3 +33,6 @@ Libraries and Licenses:
 * `Spectrum: MIT <https://github.com/bgrins/spectrum/blob/master/LICENSE>`_
 * `ReactJs: BSD <https://github.com/facebook/react#license>`_
 * `NicEdit: MIT <http://nicedit.com/license.php>`_
+* `react-datagrid: MIT <https://github.com/arqex/react-datetime>`_
+
+  + `sorty: MIT <https://github.com/radubrehar/sorty>`_

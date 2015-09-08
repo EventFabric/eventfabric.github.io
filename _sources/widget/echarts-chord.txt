@@ -28,15 +28,14 @@ Bold field names are required fields, others are optional.
 
 .. table::
 
-   ==========  ======    ======================================
+   ==========  ======    ==================================================
    Field Name  Type      Description
-   ==========  ======    ======================================
-   **val**     Number    Number to user for action
-   **label**   Text      Identifier for the label of this value
-   **serie**   Text      Identifier for the serie of this value
-   color       Color     Background color
+   ==========  ======    ==================================================
+   **val**     Number    Weight of the current chord
+   **from**    Text      Identifier for the category where the chord starts
+   **to**      Text      Identifier for the category where the chord ends
    action      Text      Name of the action, by default "add"
-   ==========  ======    ======================================
+   ==========  ======    ==================================================
 
 Actions
 -------
@@ -44,24 +43,24 @@ Actions
 add
 ...
 
-Increase the value identified by *label* by *val* or 1 if *val* isn't provided.
+Increase the weight of the chord or connection by *val* or 1 if *val* isn't provided.
 
 Useful to accumulate by an identifier.
 
 substract
 .........
 
-Decrease the value identified by *label* by *val* or 1 if *val* isn't provided.
+Decrease the weight of the chord by *val* or 1 if *val* isn't provided.
 
 set
 ...
 
-Set the value identified by *label* to *val* or 1 if *val* isn't provided.
+Set the weight of the chord to *val* or 1 if *val* isn't provided.
 
 remove
 ......
 
-Removes the value identified by *label* from the displayed values.
+Removes the chord that connects *from* and *to*
 
 Library
 -------
