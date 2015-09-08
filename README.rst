@@ -5,7 +5,7 @@ to install analytics and disqus extensions for sphinx::
     cd sphinx-contrib/googleanalytics
     sudo python setup.py install
 
-    cd sphinx-contrib/disqus
+    cd ../disqus
     sudo python setup.py install
 
 to install the theme::
