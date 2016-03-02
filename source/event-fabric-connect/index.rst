@@ -40,6 +40,34 @@ On windows double click run.bat or run it from a command line tool.
 On a unix like system you can run run.sh to run the server in the foreground or
 use start-service.sh and stop-service.sh to run it as a service.
 
+On successful execution it should display a message similar to::
+
+    Starting with Configuration:
+    {"server" {"host" "0.0.0.0", "port" 8081},
+     "auth"
+     {"username" "admin",
+      "secret" "******",
+      "password" "******",
+      "token_duration_hours" 1}}
+
+    Event Fabric Connect available from this machine at
+
+    http://localhost:8081/index.html
+
+    To access from another machine
+    replace localhost for this machine's IP address or hostname
+
+Now you can open the page http://localhost:8081/index.html to access Event Fabric Connect,
+the default credentials are:
+
+Username
+    admin
+Password
+    secret
+
+You can change them by editing the config.toml file with a text editor and
+restarting Event Fabric Connect.
+
 Usage
 -----
 
