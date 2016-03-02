@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Event Fabric's documentation!
-========================================
+Event Fabric Documentation
+==========================
 
 Contents:
 
@@ -16,3 +16,4 @@ Contents:
    element/index
    widget/index
    widget/popup-widgets
+   event-fabric-connect/index
