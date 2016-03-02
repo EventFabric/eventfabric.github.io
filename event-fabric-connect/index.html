@@ -443,6 +443,33 @@ contact us and we will help you solve your problem as soon as we can.</p>
 <p>On windows double click run.bat or run it from a command line tool.</p>
 <p>On a unix like system you can run run.sh to run the server in the foreground or
 use start-service.sh and stop-service.sh to run it as a service.</p>
+<p>On successful execution it should display a message similar to:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Starting with Configuration:
+{&quot;server&quot; {&quot;host&quot; &quot;0.0.0.0&quot;, &quot;port&quot; 8081},
+ &quot;auth&quot;
+ {&quot;username&quot; &quot;admin&quot;,
+  &quot;secret&quot; &quot;******&quot;,
+  &quot;password&quot; &quot;******&quot;,
+  &quot;token_duration_hours&quot; 1}}
+
+Event Fabric Connect available from this machine at
+
+http://localhost:8081/index.html
+
+To access from another machine
+replace localhost for this machine&#39;s IP address or hostname
+</pre></div>
+</div>
+<p>Now you can open the page <a class="reference external" href="http://localhost:8081/index.html">http://localhost:8081/index.html</a> to access Event Fabric Connect,
+the default credentials are:</p>
+<dl class="docutils">
+<dt>Username</dt>
+<dd>admin</dd>
+<dt>Password</dt>
+<dd>secret</dd>
+</dl>
+<p>You can change them by editing the config.toml file with a text editor and
+restarting Event Fabric Connect.</p>
 </div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
