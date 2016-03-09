@@ -365,6 +365,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#installing">Installing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#running">Running</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-connectors">Supported Connectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
@@ -479,6 +481,144 @@ restarting Event Fabric Connect.</p>
 <li><a class="reference external" href="https://www.youtube.com/watch?v=rmiXV576Bio">Event Fabric Business Dashboard Demo</a></li>
 <li><a class="reference external" href="https://www.youtube.com/watch?v=OhQPF3vquCY">Event Fabric Connect Integration: SQL, MQTT, HTTP/JSON and IRC</a></li>
 </ul>
+</div>
+<div class="section" id="supported-connectors">
+<h2>Supported Connectors<a class="headerlink" href="#supported-connectors" title="Permalink to this headline">¶</a></h2>
+<p>Each connector is a plugin on Event Fabric connect, new ones can be easily added,
+if you need one that is not available on this list, contact us and we will see
+the best way to integrate it.</p>
+<p>The currently supported connectors are:</p>
+<ul class="simple">
+<li>Email<ul>
+<li>IMAP and IMAPS</li>
+</ul>
+</li>
+<li>HTTP Requests</li>
+<li>IRC</li>
+<li>JMS</li>
+<li>JMX</li>
+<li>Apache Kafka</li>
+<li>MQTT</li>
+<li>RabbitMQ</li>
+<li>SNMP</li>
+<li>SQL<ul>
+<li>Supports any database with a JDBC driver</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-11-800.png"><img alt="../_images/efc-11-800.png" src="../_images/efc-11-800.png" style="width: 80%;" /></a>
+<p class="caption">Login Page</p>
+</div>
+<p>Provide username and password configured in config.toml file to log in.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-1-800.png"><img alt="../_images/efc-1-800.png" src="../_images/efc-1-800.png" style="width: 80%;" /></a>
+<p class="caption">Status Page</p>
+</div>
+<p>The status page displays status messages for Event Fabric Connect as they happen.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-2-800.png"><img alt="../_images/efc-2-800.png" src="../_images/efc-2-800.png" style="width: 80%;" /></a>
+<p class="caption">Connector List</p>
+</div>
+<p>Overview of configured connectors, this page provides the following actions:</p>
+<dl class="docutils">
+<dt>Create Connector</dt>
+<dd>Using the <cite>Create Connector</cite> button</dd>
+<dt>Start All Connectors</dt>
+<dd>Using the <cite>Start All</cite> button</dd>
+<dt>Stop All Connectors</dt>
+<dd>Using the <cite>Stop All</cite> button</dd>
+<dt>Filter Connectors in List</dt>
+<dd>Writing a filter for the connectors in the filter input</dd>
+<dt>Sort Connectors by Column</dt>
+<dd>By clicking on the column titles to change or disable column sorting order.
+Sorting can be a combination of more than one column, the order or sorting
+and priority is displayed by an icon (order) and a number (priority)</dd>
+<dt>Edit Connector</dt>
+<dd>Using the <cite>Edit</cite> button on a connector row</dd>
+<dt>Start/Stop Connector</dt>
+<dd>Using the <cite>Start/Stop</cite> button on a connector row</dd>
+<dt>Remove Connector</dt>
+<dd>Using the <cite>Remove</cite> button on a connector row, a connector must be stopped
+to be removed</dd>
+<dt>View Connector Metrics</dt>
+<dd>The <cite>Events</cite> and <cite>Errors</cite> columns update once a minute with metrics for each route</dd>
+</dl>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-3-800.png"><img alt="../_images/efc-3-800.png" src="../_images/efc-3-800.png" style="width: 80%;" /></a>
+<p class="caption">Update Connector</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-4-800.png"><img alt="../_images/efc-4-800.png" src="../_images/efc-4-800.png" style="width: 80%;" /></a>
+<p class="caption">New Connector</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-5-800.png"><img alt="../_images/efc-5-800.png" src="../_images/efc-5-800.png" style="width: 80%;" /></a>
+<p class="caption">Data Source List</p>
+</div>
+<p>Overview of configured data sources, a data source is a configuration used
+while creating connectors that query databases, the configuration specify the
+connection configuration for the database where the query for the connector
+will run.</p>
+<p>This allows to reuse configuration from one data source for many connectors.</p>
+<p>This page provides the following actions:</p>
+<dl class="docutils">
+<dt>Create Data Source</dt>
+<dd>Using the <cite>Create Data Source</cite> button</dd>
+<dt>Filter Data Sources in List</dt>
+<dd>Writing a filter for the connectors in the filter input</dd>
+<dt>Sort Data Sources by Column</dt>
+<dd>By clicking on the column titles to change or disable column sorting order.
+Sorting can be a combination of more than one column, the order or sorting
+and priority is displayed by an icon (order) and a number (priority)</dd>
+<dt>Edit Data Source</dt>
+<dd>Using the <cite>Edit</cite> button on a data source row</dd>
+<dt>Check Connector</dt>
+<dd>Using the <cite>Check</cite> button on a data source row to check if the configuration
+works</dd>
+</dl>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-6-800.png"><img alt="../_images/efc-6-800.png" src="../_images/efc-6-800.png" style="width: 80%;" /></a>
+<p class="caption">Update Data Source</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-7-800.png"><img alt="../_images/efc-7-800.png" src="../_images/efc-7-800.png" style="width: 80%;" /></a>
+<p class="caption">Create Data Source</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-8-800.png"><img alt="../_images/efc-8-800.png" src="../_images/efc-8-800.png" style="width: 80%;" /></a>
+<p class="caption">Target List</p>
+</div>
+<p>Overview of configured targets, a target is a configuration that is used when
+creating connectors, it specifies to which instance of Event Fabric, to which
+user and stream the events for that connector will go to.</p>
+<p>This page provides the following actions:</p>
+<dl class="docutils">
+<dt>Create Target</dt>
+<dd>Using the <cite>Create Target</cite> button</dd>
+<dt>Filter Targets in List</dt>
+<dd>Writing a filter for the connectors in the filter input</dd>
+<dt>Sort Targets by Column</dt>
+<dd>By clicking on the column titles to change or disable column sorting order.
+Sorting can be a combination of more than one column, the order or sorting
+and priority is displayed by an icon (order) and a number (priority)</dd>
+<dt>Edit Target</dt>
+<dd>Using the <cite>Edit</cite> button on a target row</dd>
+<dt>Check Connector</dt>
+<dd>Using the <cite>Check</cite> button on a target row to check if the configuration
+works</dd>
+</dl>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-9-800.png"><img alt="../_images/efc-9-800.png" src="../_images/efc-9-800.png" style="width: 80%;" /></a>
+<p class="caption">Update Target</p>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/efc-10-800.png"><img alt="../_images/efc-10-800.png" src="../_images/efc-10-800.png" style="width: 80%;" /></a>
+<p class="caption">Create Target</p>
+</div>
 </div>
 <div class="section" id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
