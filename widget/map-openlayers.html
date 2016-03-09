@@ -35,7 +35,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Widgets &mdash; Event Fabric 1.0 documentation</title>
+  <title>Map &mdash; Event Fabric 1.0 documentation</title>
   
 
   
@@ -62,8 +62,9 @@
         <link rel="author" title="About these documents"
               href="../about.html"/>
     <link rel="top" title="Event Fabric 1.0 documentation" href="../index.html"/>
-        <link rel="next" title="Bars Chart" href="bars.html"/>
-        <link rel="prev" title="Transformer" href="../transformer/transformer.html"/> 
+        <link rel="up" title="Widgets" href="index.html"/>
+        <link rel="next" title="Odometer Widget" href="odometer.html"/>
+        <link rel="prev" title="News Ticker" href="news.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -148,7 +149,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Widgets</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Widgets</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="bars.html">Bars Chart</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="bars.html#field-templates">Field Templates</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="bars.html#required">Required</a></li>
@@ -238,16 +239,16 @@
 <li class="toctree-l3"><a class="reference internal" href="news.html#fields">Fields</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="map-openlayers.html">Map</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="map-openlayers.html#required">Required</a></li>
-<li class="toctree-l3"><a class="reference internal" href="map-openlayers.html#optional">Optional</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="map-openlayers.html#fields">Fields</a></li>
-<li class="toctree-l4"><a class="reference internal" href="map-openlayers.html#actions">Actions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Map</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#required">Required</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#optional">Optional</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fields">Fields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#actions">Actions</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="map-openlayers.html#center">center</a></li>
-<li class="toctree-l3"><a class="reference internal" href="map-openlayers.html#clear">clear</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="map-openlayers.html#library">Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#center">center</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clear">clear</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#library">Library</a></li>
 </ul>
 </li>
 </ul>
@@ -395,11 +396,13 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>Widgets</li>
+          <li><a href="index.html">Widgets</a> &raquo;</li>
+      
+    <li>Map</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/widget/index.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/widget/map-openlayers.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -408,111 +411,90 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="widgets">
-<span id="id1"></span><h1>Widgets<a class="headerlink" href="#widgets" title="Permalink to this headline">¶</a></h1>
-<p>Widgets are visual elements that display data in the dashboard, they can be
-resized, moved and can have a title.</p>
-<p>Depending on the widget they provide additional actions by right clicking on
-them such as filtering, clearing content etc.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="bars.html">Bars Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="bars.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bars.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bars.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bars.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="bubbles.html">Bubble Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="bubbles.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bubbles.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bubbles.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bubbles.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="calendar.html">Calendar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="calendar.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="calendar.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="calendar.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="calendar.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="chart.html">Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="chart.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chart.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chart.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chart.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="echarts.html">ECharts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="echarts.html#library">Library</a></li>
-<li class="toctree-l2"><a class="reference internal" href="echarts.html#widgets">Widgets</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="news.html">News Ticker</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="news.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="news.html#fields">Fields</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="map-openlayers.html">Map</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="map-openlayers.html#required">Required</a></li>
-<li class="toctree-l2"><a class="reference internal" href="map-openlayers.html#optional">Optional</a></li>
-<li class="toctree-l2"><a class="reference internal" href="map-openlayers.html#center">center</a></li>
-<li class="toctree-l2"><a class="reference internal" href="map-openlayers.html#clear">clear</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="odometer.html">Odometer Widget</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="odometer.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="odometer.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="odometer.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="odometer.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="pie.html">Pie Chart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pie.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pie.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pie.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pie.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="planetary.html">Planetary</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="planetary.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="planetary.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="planetary.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="radar.html">Radar</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="radar.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="radar.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="radar.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="radar.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="region-map.html">Region Map</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="region-map.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="region-map.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="region-map.html#actions">Actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="region-map.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="table.html">Table</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="table.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="table.html#fields">Fields</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="template.html">Template</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="template.html#placeholders">Placeholders</a></li>
-<li class="toctree-l2"><a class="reference internal" href="template.html#library">Library</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="thematic-map.html">Thematic Map</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="thematic-map.html#field-templates">Field Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="thematic-map.html#fields">Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="thematic-map.html#label">Label</a></li>
-<li class="toctree-l2"><a class="reference internal" href="thematic-map.html#library">Library</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="map">
+<span id="map-widget"></span><h1>Map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center">
+<img alt="../_images/map-example.png" src="../_images/map-example.png" />
+<p class="caption">Example of Map Open Layers Widget displaying a popup window on icon click</p>
+</div>
+<div class="section" id="required">
+<h2>Required<a class="headerlink" href="#required" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../_images/map-fields-required.png" src="../_images/map-fields-required.png" />
+</div>
+</div>
+<div class="section" id="optional">
+<h2>Optional<a class="headerlink" href="#optional" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../_images/map-fields-optional.png" src="../_images/map-fields-optional.png" />
+</div>
+<div class="section" id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
+<p>Bold field names are required fields, others are optional.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="9%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>lat</strong></td>
+<td>Number</td>
+<td>Latitude of the event</td>
+</tr>
+<tr class="row-odd"><td><strong>lng</strong></td>
+<td>Number</td>
+<td>Longitude of the event</td>
+</tr>
+<tr class="row-even"><td>icon</td>
+<td>Text</td>
+<td>Icon to use in the map</td>
+</tr>
+<tr class="row-odd"><td>label</td>
+<td>Text</td>
+<td>Text to show as icon label</td>
+</tr>
+<tr class="row-even"><td>description</td>
+<td>Text</td>
+<td>Text to show in the popup window when icon clicked</td>
+</tr>
+<tr class="row-odd"><td>id</td>
+<td>Text</td>
+<td>Event identifier</td>
+</tr>
+<tr class="row-even"><td>polyline</td>
+<td>Set</td>
+<td>A set of points to draw a polyline</td>
+</tr>
+<tr class="row-odd"><td>action</td>
+<td>Text</td>
+<td>Name of the action, by default &#8220;add&#8221;</td>
+</tr>
+</tbody>
+</table>
+<p>If two events are sent with the same id, the last one will replace the first one</p>
+</div>
+<div class="section" id="actions">
+<h3>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="center">
+<h2>center<a class="headerlink" href="#center" title="Permalink to this headline">¶</a></h2>
+<p>Center the map at the latitude and longitude specified for the current event</p>
+</div>
+<div class="section" id="clear">
+<h2>clear<a class="headerlink" href="#clear" title="Permalink to this headline">¶</a></h2>
+<p>Clear the map before add the new icon to the map</p>
+<div class="section" id="library">
+<h3>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://openlayers.org/">http://openlayers.org/</a></p>
+</div>
 </div>
 </div>
 
@@ -522,10 +504,10 @@ them such as filtering, clearing content etc.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="bars.html" class="btn btn-neutral float-right" title="Bars Chart" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="odometer.html" class="btn btn-neutral float-right" title="Odometer Widget" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../transformer/transformer.html" class="btn btn-neutral" title="Transformer" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="news.html" class="btn btn-neutral" title="News Ticker" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

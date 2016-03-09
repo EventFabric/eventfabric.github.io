@@ -18,7 +18,7 @@ them such as filtering, clearing content etc.
    chart
    echarts
    news
-   mapstraction
+   map-openlayers
    odometer
    pie
    planetary
