@@ -6,10 +6,6 @@ Event Fabric Team:
 * Javier Dall' Amore
 * Mariano Guerra
 
-Event Fabric Background:
-
-* `Omur Uluask <http://subtlepatterns.com/grey-jean/>`_
-
 Libraries and Licenses:
 
 * `Bluebird: MIT <https://github.com/petkaantonov/bluebird#license>`_
