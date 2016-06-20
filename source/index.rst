@@ -12,8 +12,6 @@ Contents:
    :maxdepth: 2
 
    about
-   tutorials/index
-   element/index
    widget/index
    widget/popup-widgets
    event-fabric-connect/index
