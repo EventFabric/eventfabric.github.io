@@ -27,7 +27,7 @@ If a new row has the same label as an existing one, the old one will be
 replaced by the new one.
 
 Widget Configuration
-====================
+--------------------
 
 Title
     Column title
@@ -55,6 +55,16 @@ Display Condition
     An expression describing a condition to indicate when this column should be
     displayed, if the condition is false then the column won't be displayed, if
     left empty it will be always displayed, example: '(min-width: 700px)
+
+URL Type
+........
+
+For type URL the value is an object with two fields:
+
+title
+    The text to display on the link
+url
+    The address the link points to
 
 .. youtube:: Jr19_WXxze4
     :width: 100%

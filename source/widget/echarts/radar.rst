@@ -3,3 +3,4 @@
 Echarts Radar
 =============
 
+.. include:: ../fragments/echarts-pie-base.rst
