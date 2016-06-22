@@ -11,3 +11,7 @@ Echarts Time Map
     bottom of the map to slide through the different values in the serie.
 
     label must be a country name.
+
+
+.. youtube:: 7ke2uVfQd1k
+    :width: 100%
