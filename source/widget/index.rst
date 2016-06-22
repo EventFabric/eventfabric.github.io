@@ -141,6 +141,13 @@ Go to :ref:`piramid-misc-widget` documentation page
 
 Go to :ref:`table-misc-widget` documentation page
 
+.. figure:: ../../img/widgets/efabric-widget-template.png
+    :align: center
+
+    Template
+
+Go to :ref:`template-misc-widget` documentation page
+
 Open Layers Extension
 ---------------------
 
