@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44215851-1', 'eventfabric.github.io');
+      ga('send', 'pageview');
+    </script>
+    <style>#disqus_thread{background-color: #f5f5f5}</style>
+    <script type="text/javascript">
+       window.addEventListener("load", function () {
+           var div = document.createElement("div");
+           div.id = "disqus_thread";
+           document.body.appendChild(div);
+
+            var disqus_shortname = 'eventfabricdocumentation';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+       }, false);
+
+    </script>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Echarts Bar &mdash; Event Fabric 1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="author" title="About these documents"
+              href="../../about.html"/>
+    <link rel="top" title="Event Fabric 1.0 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Event Fabric
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About Event Fabric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Widgets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../popup-widgets.html">Popup Widgets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../event-fabric-connect/index.html">Event Fabric Connect</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">Event Fabric</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Echarts Bar</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/widget/echarts/bar.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="echarts-bar">
+<span id="bar-echarts-widget"></span><h1>Echarts Bar<a class="headerlink" href="#echarts-bar" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="required-fields">
+<h2>Required Fields<a class="headerlink" href="#required-fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="11%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>val</td>
+<td>Number</td>
+<td>Number to user for action</td>
+</tr>
+<tr class="row-odd"><td>label</td>
+<td>Text</td>
+<td>Identifier for the label of this value</td>
+</tr>
+<tr class="row-even"><td>serie</td>
+<td>Text</td>
+<td>Identifier for the serie of this value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="optional-fields">
+<h2>Optional Fields<a class="headerlink" href="#optional-fields" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="11%" />
+<col width="70%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>color</td>
+<td>Color</td>
+<td>Background color</td>
+</tr>
+<tr class="row-odd"><td>action</td>
+<td>Text</td>
+<td>Name of the action, by default &#8220;add&#8221;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="actions">
+<h2>Actions<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Action</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>add</td>
+<td>Add the value in <strong>val</strong> to the current amount</td>
+</tr>
+<tr class="row-odd"><td>set</td>
+<td>Set the value in <strong>val</strong> as the odometer value</td>
+</tr>
+<tr class="row-even"><td>substract</td>
+<td>Substract the value in <strong>val</strong> from the current amount</td>
+</tr>
+<tr class="row-odd"><td>remove</td>
+<td>Remove the value identified by <em>label</em> from the displayed values</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="widget-configuration">
+<h2>Widget Configuration<a class="headerlink" href="#widget-configuration" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Stack</dt>
+<dd>Convert the bar chart into a stack chart</dd>
+</dl>
+<div style="padding-bottom: 56.250000%; padding-top: 30px; position: relative; width: 100%">
+<iframe src="http://www.youtube.com/embed/1N7DRJ2NUos" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%">
+</iframe></div></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Javier Dall&#39; Amore, Mariano Guerra.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
