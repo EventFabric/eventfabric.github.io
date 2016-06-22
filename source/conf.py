@@ -26,7 +26,8 @@ import sphinx_rtd_theme
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinxcontrib.googleanalytics', 'sphinxcontrib.disqus']
+extensions = ['sphinxcontrib.googleanalytics', 'sphinxcontrib.disqus',
+        'sphinxcontrib.youtube']
 googleanalytics_id = 'UA-44215851-1'
 googleanalytics_domain = 'eventfabric.github.io'
 
